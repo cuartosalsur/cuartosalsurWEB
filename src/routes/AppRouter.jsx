@@ -5,7 +5,7 @@ import { Nosotros } from "../components/body/nosotros/Nosotros";
 import { NuestrosDptos } from "../components/body/nuestrosDptos/NuestrosDptos";
 import Galeria from "../components/body/galeria/Galeria";
 import Contacto from "../components/body/contacto/Contacto";
-import Ubicacion from "../components/body/ubicacion/Ubicacion";
+import { Ubicacion } from "../components/body/ubicacion/Ubicacion";
 
 export const AppRouter = () => {
   return (

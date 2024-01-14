@@ -5,7 +5,7 @@ import Foto1 from '../../assets/img/fondo.jpg';
 //secciones
 import { Nosotros } from '../body/nosotros/Nosotros';
 import { NuestrosDptos } from '../body/nuestrosDptos/NuestrosDptos';
-import Ubicacion from '../body/ubicacion/Ubicacion';
+import { Ubicacion } from '../body/ubicacion/Ubicacion';
 
 const styles = {
   bgNosotrosStyle: {
