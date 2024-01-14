@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {Card, CardMedia, CardContent, Typography, Button, CardActions, Modal, Box, Grid, Divider, ImageList, ImageListItem} from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const style = {
     boxStyle:{
@@ -40,6 +41,11 @@ export const CardComponent = ({
     fotosLista,
     textColor,
     cardComponent, 
+    camas,
+    baños,
+    cochera,
+    vistaLago,
+    descripcionModal,
 }) => {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -99,7 +105,7 @@ export const CardComponent = ({
                 <Grid 
                 container 
                 spacing={10}
-                >            
+                >
                     <Grid item xs={12} sm={5} sx={{order: { xs: 2, sm: 1 }}}>
                         <Box>
                         <ImageList sx={{ height: '80vh' }} cols={2} rowHeight={164} >
@@ -110,16 +116,18 @@ export const CardComponent = ({
                                     alt={item.title}
                                     loading="lazy"
                                     onClick={() => handleOpenImg(item.img)}
+                                    className='img-small'
                                 />
                                 </ImageListItem>
                             ))}
                         </ImageList>
                         </Box>                        
                     </Grid>
-                    <Grid item xs={12} sm={7} sx={{order: { xs: 1, sm: 2 } }}>
+                    <Grid item xs={12} sm={7} sx={{order: { xs: 1, sm: 2 }, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <Box sx={{bgcolor: '#f5f5dc', borderRadius: 2, height: '80vh', width: '100%', p: 3}}>
                         <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
                         <Typography id="modal-modal-title" variant="h4" sx={{color: textColor}}>
-                            Titulo
+                            {tituloCard}
                         </Typography>
                         <Button onClick={handleClose} sx={{color: textColor}} >
                             cerrar
@@ -127,25 +135,29 @@ export const CardComponent = ({
                         </Box>
                         <Divider color={textColor} />
                         <CardContent>
-                            <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 1}}>
-                                Camas:
+                        <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 1}}>
+                                Ubicacion: <Link to="/Ubicacion">Ver</Link>
                             </Typography>
                             <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 1}}>
-                                Baños:
+                                Camas: {camas}
                             </Typography>
                             <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 1}}>
-                                Cochera:
+                                Baños: {baños}
                             </Typography>
                             <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 1}}>
-                                Vista al lago:
+                                Cochera: {cochera}
+                            </Typography>
+                            <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 1}}>
+                                Vista al lago: {vistaLago}
                             </Typography>
                                 <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 2}}>
                                     Descripción: 
                                 </Typography>
                                 <Typography id="modal-modal-description" variant="body2" sx={{color: textColor, mt: 2}}>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim nihil cupiditate cum, iusto omnis expedita ex libero dignissimos odio natus aspernatur consequatur dolorum exercitationem deserunt rerum blanditiis repellendus! Repudiandae, animi.
+                                  {descripcionModal}
                                 </Typography>
                         </CardContent>
+                      </Box>
                     </Grid>
                 </Grid>
             </Box>

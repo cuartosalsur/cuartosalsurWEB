@@ -28,6 +28,9 @@ export const NavBar = () => {
             <Button component={NavLink} to="/NuestrosDepartamentos" color='secondary' sx={{fontFamily: 'Nunito Sans', fontWeight: 800}}>
               Nuestros Departamentos
             </Button>
+            <Button component={NavLink} to="/Ubicacion" color='secondary' sx={{fontFamily: 'Nunito Sans', fontWeight: 800}}>
+              Ubicacion
+            </Button>
             <Button component={NavLink} to="/Galeria" color='secondary' sx={{fontFamily: 'Nunito Sans', fontWeight: 800}}>
               Galeria
             </Button>

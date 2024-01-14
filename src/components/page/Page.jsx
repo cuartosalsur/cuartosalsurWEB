@@ -5,6 +5,7 @@ import Foto1 from '../../assets/img/fondo.jpg';
 //secciones
 import { Nosotros } from '../body/nosotros/Nosotros';
 import { NuestrosDptos } from '../body/nuestrosDptos/NuestrosDptos';
+import Ubicacion from '../body/ubicacion/Ubicacion';
 
 const styles = {
   bgNosotrosStyle: {
@@ -18,12 +19,12 @@ export const Page = () => {
     <div style={styles.bgNosotrosStyle}>
         <img src={Foto1} className='img'/>
     </div>
-    
       
-          <Nosotros />
+      <Nosotros />
 
+      <NuestrosDptos />
 
-          <NuestrosDptos />
+      <Ubicacion/>
 
     </>
   )

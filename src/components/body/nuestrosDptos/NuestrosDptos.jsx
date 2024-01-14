@@ -32,14 +32,19 @@ export const NuestrosDptos = ({
       container 
       spacing={10}
       >
-        <Grid item xs={12} sm={7}>
+        <Grid item xs={12} sm={6}>
           <CardComponent 
           fotosLista={itemData} 
           foto={foto1} 
           bgColorModal='#241178'
-          tituloCard = 'Titulo Cars'
+          tituloCard = 'Nombre dpto'
           descripcionCard='Aqui va una descripción.'
-          textColor='#fff'
+          textColor='#A04000'
+          baños= 'Numero Baños'
+          camas= 'numero camas y para cuántas personas'
+          cochera= 'si tiene o no cochera'
+          vistaLago= 'si tiene o no vista al lago'
+          descripcionModal= 'una breve descripción del dpto.'
           />
         </Grid>
             
