@@ -1,6 +1,6 @@
 import { Typography, Grid } from '@mui/material';
 //logo
-import Logo from '../../../assets/img/logo2.png';
+import Logo from '../../../assets/img/logo.png';
 
 const styles = {
   bgNosotrosStyle: {

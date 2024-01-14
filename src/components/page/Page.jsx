@@ -1,7 +1,7 @@
 //styles
 import '../../assets/css/Style.css';
 //fotos
-import Foto1 from '../../assets/img/fondo.jpg';
+import Foto1 from '../../assets/img/fondoInicio.png';
 //secciones
 import { Nosotros } from '../body/nosotros/Nosotros';
 import { NuestrosDptos } from '../body/nuestrosDptos/NuestrosDptos';
