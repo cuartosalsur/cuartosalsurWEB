@@ -34,7 +34,7 @@ export const Ubicacion = ({
       alignItems={'center'}
       spacing={5}
       >
-        <Grid item xs={12} sm={8}>
+        <Grid item xs={12} sm={8} md={9}>
         <Typography
           sx={{
             fontFamily: 'Kalam',
@@ -45,17 +45,17 @@ export const Ubicacion = ({
             textAlign: 'center'
           }}
         >{titulo}</Typography>
-        <Box sx={{ width: '100%', height: '70vh'}}>
-        <iframe
-          title="Google Maps"
-          src={Mapas[selectedMap]}
-          sx={{ border: 0 }}
-                width='100%'
-                height='80%'
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+        <Box sx={{ width: '100%', height: '60vh'}}>
+          <iframe
+            title="Google Maps"
+            src={Mapas[selectedMap]}
+            sx={{ border: 0 }}
+                  width='100%'
+                  height='100%'
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+          />
         </Box>
         </Grid>
             

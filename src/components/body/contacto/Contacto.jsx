@@ -171,7 +171,6 @@ export const Contacto = ({
       </Grid>
       </Grid>
 
-//Alertas
       <Snackbar open={successOpen} autoHideDuration={6000} onClose={handleSuccessClose} > 
         <Alert onClose={handleSuccessClose} severity="success" >
           <AlertTitle>

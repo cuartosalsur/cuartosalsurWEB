@@ -42,6 +42,7 @@ export const CardComponent = ({
     textColor,
     cardComponent, 
     camas,
+    ocupacion,
     baños,
     cochera,
     vistaLago,
@@ -124,9 +125,9 @@ export const CardComponent = ({
                         </Box>                        
                     </Grid>
                     <Grid item xs={12} sm={7} sx={{order: { xs: 1, sm: 2 }, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <Box sx={{bgcolor: '#fff', borderRadius: 2, height: '80vh', width: '100%', p: 3}}>
+                      <Box sx={{bgcolor: '#fff', borderRadius: 2, height: {xs: '100%', md:'80vh'}, width: '100%', p: 3}}>
                         <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
-                        <Typography id="modal-modal-title" variant="h4" sx={{color: textColor}}>
+                        <Typography id="modal-modal-title" sx={{color: textColor, fontSize: {xs: 20, sm: 25, md: 30}}}>
                             {tituloCard}
                         </Typography>
                         <Button onClick={handleClose} sx={{color: textColor}} >
@@ -135,25 +136,28 @@ export const CardComponent = ({
                         </Box>
                         <Divider color={textColor} />
                         <CardContent>
-                        <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 1}}>
+                        <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
                                 Ubicacion: <Link to="/Ubicacion">Ver</Link>
                             </Typography>
-                            <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 1}}>
+                            <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
                                 Camas: {camas}
                             </Typography>
-                            <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 1}}>
+                            <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
+                                Ocupacion: {ocupacion}
+                            </Typography>
+                            <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
                                 Baños: {baños}
                             </Typography>
-                            <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 1}}>
+                            <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
                                 Cochera: {cochera}
                             </Typography>
-                            <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 1}}>
+                            <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
                                 Vista al lago: {vistaLago}
                             </Typography>
-                                <Typography id="modal-modal-description" variant="h6" sx={{color: textColor, mt: 2}}>
+                                <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 17, sm: 20}}}>
                                     Descripción: 
                                 </Typography>
-                                <Typography id="modal-modal-description" variant="body2" sx={{color: textColor, mt: 2}}>
+                                <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 15, sm: 18}}}>
                                   {descripcionModal}
                                 </Typography>
                         </CardContent>
