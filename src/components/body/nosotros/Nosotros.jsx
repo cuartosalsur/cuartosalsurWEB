@@ -2,12 +2,6 @@ import { Typography, Grid } from '@mui/material';
 //logo
 import Logo from '../../../assets/img/logo.png';
 
-const styles = {
-  bgNosotrosStyle: {
-  backgroundColor: '#f5f5dc',
-  },
-};
-
 export const Nosotros = ({
   titulo = 'Nosotros',
   p = `lorem ipsum dolor sit amet, consectetur adiplo lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
@@ -17,7 +11,6 @@ export const Nosotros = ({
 }) => {
   return (
     <>
-    <div style={styles.bgNosotrosStyle}>
       <Grid
         container
         justifyContent={'center'}
@@ -25,6 +18,7 @@ export const Nosotros = ({
         sx={{
           height: {xs: '100%', sm: '100vh'},
           padding: {xs: '15% 5%', lg: '7% 5%'},
+          bgcolor: '#FDF2D9'
         }}
       >
 
@@ -62,7 +56,6 @@ export const Nosotros = ({
 
       </Grid>
       </Grid>
-    </div>
     </>
   );
 };

@@ -1,5 +1,5 @@
 import Foto1 from '../assets/img/dpto13/img1.jpg';
-import Foto20 from '../assets/img/dpto13/img2.jpg';
+import Foto2 from '../assets/img/dpto13/img2.jpg';
 import Foto3 from '../assets/img/dpto13/img3.jpg';
 import Foto4 from '../assets/img/dpto13/img4.jpg';
 import Foto5 from '../assets/img/dpto13/img5.jpg';
@@ -17,7 +17,7 @@ import Foto16 from '../assets/img/dpto13/img16.jpg';
 import Foto17 from '../assets/img/dpto13/img17.jpg';
 import Foto18 from '../assets/img/dpto13/img18.jpg';
 import Foto19 from '../assets/img/dpto13/img19.jpg';
-import Foto2 from '../assets/img/dpto13/img20.jpg';
+import Foto20 from '../assets/img/dpto13/img20.jpg';
 
 export const itemData = [
     {

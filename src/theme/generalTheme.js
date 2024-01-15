@@ -9,10 +9,10 @@ export const generalTheme = createTheme({
             main: '#424242'
         },
         third:{
-            main: '#fff'
-        },
-        fourth:{
-            main: '#F9E79F '
+            main: '#F9E79F'
         },
     },
+    typography: {
+        fontFamily: ['Poppins', 'Nunito', 'Roboto'].join(','),
+      },
 })

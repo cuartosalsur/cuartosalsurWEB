@@ -1,12 +1,6 @@
 import { useState } from 'react';
 import { Typography, Grid, Box, Button, ButtonGroup } from '@mui/material';
 
-const styles = {
-  bgNosotrosStyle: {
-  backgroundColor: '#f5f5dc',
-  },
-};
-
 const Mapas = {
   one: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.922565973069!2d-71.31863122449158!3d-41.136216331127706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b0df425eef3%3A0x958de3a9c25b0a48!2sGrupo%20de%20Apoyo%20A%20la%20Lactancia%20Materna%20de%20San%20Car!5e0!3m2!1ses!2sar!4v1705253773049!5m2!1ses!2sar",
   two: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.922565973069!2d-71.31863122449158!3d-41.136216331127706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b0df425eef3%3A0x958de3a9c25b0a48!2sGrupo%20de%20Apoyo%20A%20la%20Lactancia%20Materna%20de%20San%20Car!5e0!3m2!1ses!2sar!4v1705253773049!5m2!1ses!2sar",
@@ -23,7 +17,6 @@ export const Ubicacion = ({
   };
   return (
     <>
-    <div style={styles.bgNosotrosStyle}>
       <Grid
         container
         justifyContent={'center'}
@@ -31,6 +24,7 @@ export const Ubicacion = ({
         sx={{
           height: {xs: '100%', sm: '100vh'},
           padding: {xs: '15% 5%', lg: '7% 5%'},
+          bgcolor: '#FDF2D9'
         }}
       >
 
@@ -58,7 +52,7 @@ export const Ubicacion = ({
           sx={{ border: 0 }}
                 width='100%'
                 height='80%'
-                allowFullScreen="true"
+                allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
@@ -93,37 +87,10 @@ export const Ubicacion = ({
               Dpto España
             </Button>
           </ButtonGroup>
-          </Box>
-       
+          </Box>       
         </Grid>
-
       </Grid>
       </Grid>
-    </div>
     </>
   );
 };
-
-/*
-          <iframe
-            title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.922565973069!2d-71.31863122449158!3d-41.136216331127706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b0df425eef3%3A0x958de3a9c25b0a48!2sGrupo%20de%20Apoyo%20A%20la%20Lactancia%20Materna%20de%20San%20Car!5e0!3m2!1ses!2sar!4v1705253773049!5m2!1ses!2sar"
-            sx={{ border: 0 }}
-            width='100%'
-            height='80%'
-            allowFullScreen="true"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-
-          <iframe
-            title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.5299704246665!2d-71.31586746415014!3d-41.133217430943326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b0c4589a31d%3A0x6e62fc17b5fff03d!2sEspa%C3%B1a%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1705253921568!5m2!1ses!2sar"
-            sx={{ border: 0 }}
-            width='100%'
-            height='80%'
-            allowFullScreen="true"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-*/

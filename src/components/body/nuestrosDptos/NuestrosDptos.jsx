@@ -15,7 +15,7 @@ export const NuestrosDptos = ({
         sx={{
           height: {xs: '100%', sm: '100vh'},
           padding: {xs: '15% 5%', lg: '7% 5%'},
-          bgcolor: '#F2ECDA'
+          bgcolor: '#F0C8A2'
         }}
       >
         <Typography
@@ -48,7 +48,7 @@ export const NuestrosDptos = ({
           />
         </Grid>
             
-        <Grid item xs={12} sm={5}>
+        <Grid item xs={12} sm={6}>
 
         </Grid>
       </Grid>

@@ -6,10 +6,11 @@ import Foto1 from '../../assets/img/fondoInicio.png';
 import { Nosotros } from '../body/nosotros/Nosotros';
 import { NuestrosDptos } from '../body/nuestrosDptos/NuestrosDptos';
 import { Ubicacion } from '../body/ubicacion/Ubicacion';
+import { Contacto } from '../body/contacto/Contacto';
 
 const styles = {
   bgNosotrosStyle: {
-  backgroundColor: '#f5f5dc'
+  backgroundColor: '#FDF2D9'
   },
 };
 
@@ -24,8 +25,9 @@ export const Page = () => {
 
       <NuestrosDptos />
 
-      <Ubicacion/>
+      <Ubicacion />
 
+      <Contacto />
     </>
   )
 }

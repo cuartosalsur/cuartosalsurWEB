@@ -124,7 +124,7 @@ export const CardComponent = ({
                         </Box>                        
                     </Grid>
                     <Grid item xs={12} sm={7} sx={{order: { xs: 1, sm: 2 }, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <Box sx={{bgcolor: '#f5f5dc', borderRadius: 2, height: '80vh', width: '100%', p: 3}}>
+                      <Box sx={{bgcolor: '#fff', borderRadius: 2, height: '80vh', width: '100%', p: 3}}>
                         <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
                         <Typography id="modal-modal-title" variant="h4" sx={{color: textColor}}>
                             {tituloCard}
