@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Typography, Grid, Box, Button, ButtonGroup } from '@mui/material';
 
 const Mapas = {
-  one: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.922565973069!2d-71.31863122449158!3d-41.136216331127706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b0df425eef3%3A0x958de3a9c25b0a48!2sGrupo%20de%20Apoyo%20A%20la%20Lactancia%20Materna%20de%20San%20Car!5e0!3m2!1ses!2sar!4v1705253773049!5m2!1ses!2sar",
-  two: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.922565973069!2d-71.31863122449158!3d-41.136216331127706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b0df425eef3%3A0x958de3a9c25b0a48!2sGrupo%20de%20Apoyo%20A%20la%20Lactancia%20Materna%20de%20San%20Car!5e0!3m2!1ses!2sar!4v1705253773049!5m2!1ses!2sar",
-  three: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.5299704246665!2d-71.31586746415014!3d-41.133217430943326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b0c4589a31d%3A0x6e62fc17b5fff03d!2sEspa%C3%B1a%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1705253921568!5m2!1ses!2sar",
+  one: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.828040094745!2d-71.31927672449147!3d-41.13827973125446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b12242d9b21%3A0x209d3ee3b4b28707!2s20%20de%20Junio%20781%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1705441289688!5m2!1ses!2sar",
+  two: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.828040094745!2d-71.31927672449147!3d-41.13827973125446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b12242d9b21%3A0x209d3ee3b4b28707!2s20%20de%20Junio%20781%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1705441289688!5m2!1ses!2sar",
+  three: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.053133911701!2d-71.31691882449181!3d-41.13336603095253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b0c56f812d5%3A0x9836f7da2a99a2f9!2sEspa%C3%B1a%20334%2C%20R8400%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1705441048951!5m2!1ses!2sar",
 };
 
 export const Ubicacion = ({
@@ -50,11 +50,11 @@ export const Ubicacion = ({
             title="Google Maps"
             src={Mapas[selectedMap]}
             sx={{ border: 0 }}
-                  width='100%'
-                  height='100%'
-                  allowFullScreen={true}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+            width='100%'
+            height='100%'
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           />
         </Box>
         </Grid>
@@ -70,21 +70,21 @@ export const Ubicacion = ({
               variant={selectedMap === 'one' ? 'contained' : 'outlined'}
               onClick={() => handleButtonClick('one')}
             >
-              Dpto 13
+              Amancay
             </Button>
             <Button
               key="two"
               variant={selectedMap === 'two' ? 'contained' : 'outlined'}
               onClick={() => handleButtonClick('two')}
             >
-              Dpto 14
+              Verbena
             </Button>
             <Button
               key="three"
               variant={selectedMap === 'three' ? 'contained' : 'outlined'}
               onClick={() => handleButtonClick('three')}
             >
-              Dpto España
+              Mariposa Blanca
             </Button>
           </ButtonGroup>
           </Box>       
@@ -94,3 +94,4 @@ export const Ubicacion = ({
     </>
   );
 };
+ 

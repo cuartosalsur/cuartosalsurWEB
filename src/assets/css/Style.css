@@ -21,6 +21,19 @@
     height: 100%;
 }
 
+.logo-img {
+    width: 16em;
+    height: 10em;
+}
+
+@media (max-width: 500px) {
+    .logo-img {
+        width: 10em;
+        height: 6em;
+        margin: 7px;
+    }
+  }
+
 .cardBox:hover {   
     transition: .3s;
     transform: scalex(1.1) scaley(1.1);

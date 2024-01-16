@@ -51,6 +51,7 @@ export const NuestrosDptos = ({
           cochera= 'si tiene o no cochera'
           vistaLago= 'si tiene o no vista al lago'
           descripcionModal= 'una breve descripción del dpto.'
+          ubicacion= '20 de Junio 781, San Carlos de Bariloche, Río Negro. - '
           />
         </Grid>
             
@@ -68,6 +69,7 @@ export const NuestrosDptos = ({
           cochera= 'si tiene o no cochera'
           vistaLago= 'si tiene o no vista al lago'
           descripcionModal= 'una breve descripción del dpto.'
+          ubicacion= 'España 334, San Carlos de Bariloche, Río Negro. - '
           />
         </Grid>
 
@@ -85,6 +87,7 @@ export const NuestrosDptos = ({
           cochera= 'si tiene o no cochera'
           vistaLago= 'si tiene o no vista al lago'
           descripcionModal= 'una breve descripción del dpto.'
+          ubicacion= '20 de Junio 781, San Carlos de Bariloche, Río Negro. - '
           />
         </Grid>
       </Grid>

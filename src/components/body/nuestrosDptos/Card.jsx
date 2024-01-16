@@ -47,6 +47,7 @@ export const CardComponent = ({
     cochera,
     vistaLago,
     descripcionModal,
+    ubicacion,
 }) => {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -136,30 +137,30 @@ export const CardComponent = ({
                         </Box>
                         <Divider color={textColor} />
                         <CardContent>
-                        <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                                Ubicacion: <Link to="/Ubicacion">Ver</Link>
+                            <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
+                              <b>Ubicacion:</b> {ubicacion} <Link to="/Ubicacion">Ver</Link>
                             </Typography>
                             <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                                Camas: {camas}
+                              <b>Camas:</b> {camas}
                             </Typography>
                             <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                                Ocupacion: {ocupacion}
+                              <b>Ocupacion:</b> {ocupacion}
                             </Typography>
                             <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                                Baños: {baños}
+                              <b>Baños:</b> {baños}
                             </Typography>
                             <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                                Cochera: {cochera}
+                              <b>Cochera:</b> {cochera}
                             </Typography>
                             <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                                Vista al lago: {vistaLago}
+                              <b>Vista al lago:</b> {vistaLago}
                             </Typography>
-                                <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 17, sm: 20}}}>
-                                    Descripción: 
-                                </Typography>
-                                <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 15, sm: 18}}}>
-                                  {descripcionModal}
-                                </Typography>
+                            <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 17, sm: 20}}}>
+                              <b>Descripción: </b>  
+                            </Typography>
+                            <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 15, sm: 18}}}>
+                              {descripcionModal}
+                            </Typography>
                         </CardContent>
                       </Box>
                     </Grid>
