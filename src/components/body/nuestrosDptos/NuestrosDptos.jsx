@@ -1,5 +1,5 @@
 import { Typography, Grid } from '@mui/material';
-import { itemData } from '../../../assets/Data';
+import { itemData } from '../../../assets/Data/Data';
 import { CardComponent } from './Card';
 import foto1 from '../../../assets/img/dpto13/img1.jpg';
 

@@ -40,3 +40,13 @@ a {
     text-decoration: none;
     margin-left: 2%;
 }
+
+.a-light{
+    display: inline-block;
+}
+
+.img-light{
+    width: 12em;
+    height: 12em;
+    margin-bottom: 10px;
+}

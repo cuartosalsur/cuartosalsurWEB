@@ -46,7 +46,7 @@ export const Contacto = ({
         justifyContent={'center'}
         alignItems={'center'}
         sx={{
-          height: {xs: '100%', sm: '100vh'},
+          height: '100%',
           padding: {xs: '15% 5%', lg: '7% 5%'},
           bgcolor: '#FDF2D9'
         }}
@@ -101,7 +101,7 @@ export const Contacto = ({
                   </InputAdornment>
                 ),
               }}
-              sx={{marginTop: {xs: '10%', sm:'5%'}}}
+              sx={{marginTop: {xs: '10%', sm:'4%'}}}
             />
 
             <TextField 
@@ -120,7 +120,7 @@ export const Contacto = ({
                   </InputAdornment>
                 ),
               }}
-              sx={{marginTop: {xs: '10%', sm:'5%'}}}
+              sx={{marginTop: {xs: '10%', sm:'4%'}}}
             />
 
             <TextField 
@@ -134,14 +134,14 @@ export const Contacto = ({
               name="message"
               variant="outlined"  
               defaultValue="Dejanos tu consulta aquí.."
-              sx={{marginTop: {xs: '10%', sm:'5%'}}}
+              sx={{marginTop: {xs: '10%', sm:'4%'}}}
             />
 
             <LoadingButton
               loading={loading}
               variant="outlined"
               type="submit"
-              sx={{ marginTop: { xs: '10%', sm: '5%' } }}
+              sx={{ marginTop: { xs: '10%', sm: '4%' } }}
               onClick={sendEmail}
             >
               Enviar

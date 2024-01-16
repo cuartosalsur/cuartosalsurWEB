@@ -7,6 +7,7 @@ import { Nosotros } from '../body/nosotros/Nosotros';
 import { NuestrosDptos } from '../body/nuestrosDptos/NuestrosDptos';
 import { Ubicacion } from '../body/ubicacion/Ubicacion';
 import { Contacto } from '../body/contacto/Contacto';
+import { Galeria } from '../body/galeria/Galeria';
 
 const styles = {
   bgNosotrosStyle: {
@@ -26,6 +27,8 @@ export const Page = () => {
       <NuestrosDptos />
 
       <Ubicacion />
+
+      <Galeria />
 
       <Contacto />
     </>
