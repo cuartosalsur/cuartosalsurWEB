@@ -1,8 +1,9 @@
-import { Grid, Box, Typography } from '@mui/material';
+import { Grid, Box, Typography, Divider } from '@mui/material';
 //fotos
 import Foto from '../../assets/img/footer.png';
 import LogoBooking from '../../assets/img/booking-logo.png';
 import LogoAirbnb from '../../assets/img/airbnb-logo.jpg';
+import Logo from '../../assets/img/logo.png';
 
 export const Footer = () => {
   return (
@@ -10,24 +11,30 @@ export const Footer = () => {
       <div sx={{ backgroundColor: '#FDF2D9' }}>
         <Grid container sx={{ height: '90vh', position: 'relative' }}>
           <Grid
+            container
+            justifyContent={'center'}
+            alignItems={'center'}
+            spacing={10}
             sx={{
               position: 'absolute',
               top: '50%',
               left: '50%',
               transform: 'translate(-50%, -50%)',
-              display: 'flex',
-              alignItems: 'center',
-              gap: {xs: 0, sm: 10, md: '20'}
             }}
           >
-            <img
+            <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center'}}>
+              <img src={Logo} alt="Logo" />
+            </Grid>
+
+            <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', gap: 5}}>
+              <img
                 src={LogoBooking}
                 alt="Booking Logo"
                 className='logo-img'
-            />
+              />
 
-            <img src={LogoAirbnb} alt="Airbnb Logo"  className='logo-img' /> 
-                      
+              <img src={LogoAirbnb} alt="Airbnb Logo"  className='logo-img' />
+            </Grid>                      
           </Grid>
 
           <img src={Foto} className="img-full" />

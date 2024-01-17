@@ -154,17 +154,17 @@ export const Contacto = ({
             <Typography variant="h6" color="secondary">
               {p}
             </Typography>
-            <Box sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 2}}>
+            <Box sx={{display: 'flex', flexDirection: {xs: 'row', sm: 'column', md:'row'}, alignItems: 'center', gap: 2}}>
               <LocalPhone />
               <Typography variant="h6" color="secondary">
                 +54 11 5456 4929
             </Typography>
             </Box>
-            <Box sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 2}}>
+            <Box sx={{display: 'flex', flexDirection: {xs: 'row', sm: 'column', md:'row'}, alignItems: 'center', gap: 2}}>
               <Mail />
               <Typography variant="h6" color="secondary">
                 cuartosalsur@outlook.com
-            </Typography>
+              </Typography>
             </Box>
           </Box>
         </Grid>

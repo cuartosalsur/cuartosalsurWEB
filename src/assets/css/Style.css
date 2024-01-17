@@ -26,10 +26,10 @@
     height: 10em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .logo-img {
-        width: 10em;
-        height: 6em;
+        width: 8em;
+        height: 5em;
         margin: 7px;
     }
   }

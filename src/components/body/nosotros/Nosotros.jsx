@@ -1,6 +1,6 @@
 import { Typography, Grid } from '@mui/material';
 //logo
-import Logo from '../../../assets/img/logo.png';
+import Logo from '../../../assets/img/logo2.png';
 
 export const Nosotros = ({
   titulo = 'Nosotros',
@@ -26,9 +26,8 @@ export const Nosotros = ({
       container 
       justifyContent={'center'}
       alignItems={'center'}
-      spacing={10}
       >
-        <Grid item xs={12} sm={7}>
+        <Grid item xs={12} sm={6}>
         <Typography
           sx={{
             fontFamily: 'Kalam',
@@ -50,7 +49,7 @@ export const Nosotros = ({
           </Typography>
         </Grid>
             
-        <Grid item xs={12} sm={5} md={4} >
+        <Grid item xs={12} sm={6} sx={{marginTop: {xs: '20px', sm: 0}, justifyContent: 'center'}}>
             <img src={Logo} className='logo'/>          
         </Grid>
 
