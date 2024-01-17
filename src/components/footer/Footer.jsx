@@ -9,7 +9,9 @@ export const Footer = () => {
   return (
     <>
       <div sx={{ backgroundColor: '#FDF2D9' }}>
-        <Grid container sx={{ height: '90vh', position: 'relative' }}>
+        <Grid 
+        container 
+        sx={{ height: '90vh', position: 'relative'}}>
           <Grid
             container
             justifyContent={'center'}

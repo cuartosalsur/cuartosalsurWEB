@@ -33,13 +33,13 @@
 
 @media (max-width: 700px) {
     .logo-img {
-        width: 8em;
-        height: 5em;
+        width: 7em;
+        height: 4em;
         margin: 7px;
     }
     .logo-footer {
-        width: 20em;
-        height: 16em;
+        width: 19em;
+        height: 15em;
     }
   }
 
