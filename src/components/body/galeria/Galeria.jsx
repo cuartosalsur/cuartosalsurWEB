@@ -8,7 +8,6 @@ import 'lightgallery/css/lg-thumbnail.css';
 // import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
-import lgVideo from 'lightgallery/plugins/video';
 //data
 import { itemDataGeneral } from '../../../assets/Data/general';
 
@@ -48,7 +47,7 @@ export const Galeria = ({titulo="Galería"}) => {
           }}>
           <LightGallery
             speed={600}
-            plugins={[lgThumbnail, lgZoom, lgVideo]}
+            plugins={[lgThumbnail, lgZoom]}
             licenseKey={''}
           >
             {itemDataGeneral.map((item) => (

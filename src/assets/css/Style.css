@@ -72,3 +72,13 @@ a {
     height: 12em;
     margin-bottom: 10px;
 }
+
+.img-card {
+    width: 12em;
+    height: 8em;
+    margin-bottom: 5px;
+}
+
+.Light-Card {
+    z-index: 10;
+}

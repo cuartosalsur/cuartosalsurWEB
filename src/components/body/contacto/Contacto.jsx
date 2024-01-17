@@ -65,7 +65,7 @@ export const Contacto = ({
       container 
       spacing={10}
       >
-        <Grid item xs={12} sm={7}>
+        <Grid item xs={12} sm={7} sx={{order: { xs: 2, sm: 1 }}}>
           <form ref={form} onSubmit={sendEmail}>
             <TextField 
               fullWidth 
@@ -149,7 +149,7 @@ export const Contacto = ({
           </form>
         </Grid>
             
-        <Grid item xs={12} sm={5}>
+        <Grid item xs={12} sm={5} sx={{order: { xs: 1, sm: 2 }}}>
           <Box sx={{display: 'flex', flexDirection: 'column', gap: 5}}>
             <Typography variant="h6" color="secondary">
               {p}
