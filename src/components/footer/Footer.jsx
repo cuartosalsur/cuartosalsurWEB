@@ -23,7 +23,7 @@ export const Footer = () => {
             }}
           >
             <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center'}}>
-              <img src={Logo} alt="Logo" />
+              <img src={Logo} alt="Logo" className='logo-footer'/>
             </Grid>
 
             <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', gap: 5}}>
