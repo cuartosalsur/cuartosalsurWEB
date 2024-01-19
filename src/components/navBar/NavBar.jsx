@@ -9,7 +9,7 @@ export const NavBar = () => {
           sx={{
             zIndex: 2,
             position:'fixed',
-            backgroundColor: 'transparent',
+            backgroundColor: 'black',
             display: {xs: 'none', md: 'block'},
           }}
         >
@@ -19,22 +19,22 @@ export const NavBar = () => {
               gap: '3%'
             }}
           >
-            <Button component={NavLink} to="/Inicio" color='secondary' sx={{ fontWeight: 800}}>
+            <Button component={NavLink} to="/Inicio" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
               Inicio
             </Button>
-            <Button component={NavLink} to="/Nosotros" color='secondary' sx={{ fontWeight: 800}}>
+            <Button component={NavLink} to="/Nosotros" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
               Nosotros
             </Button>
-            <Button component={NavLink} to="/NuestrosDepartamentos" color='secondary' sx={{ fontWeight: 800}}>
+            <Button component={NavLink} to="/NuestrosDepartamentos" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
               Nuestros Departamentos
             </Button>
-            <Button component={NavLink} to="/Ubicacion" color='secondary' sx={{ fontWeight: 800}}>
+            <Button component={NavLink} to="/Ubicacion" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
               Ubicacion
             </Button>
-            <Button component={NavLink} to="/Galeria" color='secondary' sx={{ fontWeight: 800}}>
+            <Button component={NavLink} to="/Galeria" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
               Galeria
             </Button>
-            <Button component={NavLink} to="/Contacto" color='secondary' sx={{ fontWeight: 800}}>
+            <Button component={NavLink} to="/Contacto" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
               Contacto
             </Button>
           </Toolbar>
