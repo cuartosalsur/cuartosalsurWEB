@@ -1,5 +1,4 @@
 import Foto1 from '../img/dpto13/img1.jpg';
-import Foto2 from '../img/dpto13/img2.jpg';
 import Foto3 from '../img/dpto13/img3.jpg';
 import Foto4 from '../img/dpto13/img4.jpg';
 import Foto5 from '../img/dpto13/img5.jpg';
@@ -99,10 +98,6 @@ export const itemData = [
   },
   {
     img: Foto1,
-    title: 'Departamento Amancay',
-  },
-  {
-    img: Foto2,
     title: 'Departamento Amancay',
   },
 ];

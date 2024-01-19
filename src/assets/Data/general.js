@@ -10,8 +10,6 @@ import Foto9 from '../img/general/foto9.jpg';
 import Foto10 from '../img/general/foto10.jpg';
 import Foto12 from '../img/general/foto12.jpg';
 import Foto13 from '../img/general/foto13.jpg';
-import Foto14 from '../img/general/foto14.jpg';
-import Foto15 from '../img/general/foto15.jpg';
 import Foto17 from '../img/general/foto17.jpg';
 import Foto18 from '../img/general/foto18.jpg';
 import Foto19 from '../img/general/foto19.jpg';
@@ -111,13 +109,5 @@ export const itemDataGeneral = [
   {
     img: Foto13,
     title: 'Departamento Verbena',
-  },
-  {
-    img: Foto14,
-    title: 'Vista al Lago Nahuel Huapi',
-  },
-  {
-    img: Foto15,
-    title: 'Vista al Lago Nahuel Huapi',
   },
 ];

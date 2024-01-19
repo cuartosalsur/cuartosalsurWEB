@@ -17,68 +17,68 @@ import Foto16 from '../img/España/foto16.jpg';
 
 
 export const itemDataEspaña = [
-    {
-        img: Foto1,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto2,
-        title: 'Departamento Mariposa Blanca',
-      },
-    {
-        img: Foto3,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto4,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto5,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto6,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto7,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto8,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto9,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto10,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto11,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto12,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto13,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto14,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto15,
-        title: 'Departamento Mariposa Blanca',
-      },
-      {
-        img: Foto16,
-        title: 'Departamento Mariposa Blanca',
-      },
+  {
+      img: Foto1,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto2,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto3,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto4,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto5,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto6,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto7,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto8,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto9,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto10,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto11,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto12,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto13,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto14,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto15,
+      title: 'Departamento Lupines',
+  },
+  {
+      img: Foto16,
+      title: 'Departamento Lupines',
+  },
 ];

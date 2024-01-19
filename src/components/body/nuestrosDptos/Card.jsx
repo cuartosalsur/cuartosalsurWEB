@@ -81,16 +81,16 @@ export const CardComponent = ({
                 p: 2,  
                 width: '100%',
                 height: '90vh',
+                overflow: 'hidden'
                 }} >
                 <Grid 
                 container 
-                spacing={5}
                 >
-                 <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: { xs: '15em', sm: '20em',md: 'auto' }}}>
-                  <Box sx={{ width: { xs: '70%', sm: '50%', md: '80%' }, maxHeight: { xs: '100%', md: '70vh' } }}>
+                 <Grid item xs={12} md={6} sx={{ display: { xs: 'none', md: 'flex' }, flexDirection: 'column', alignItems: 'center'}}>
+                  <Box sx={{ width:  '80%', height: '70vh' }}>
                     {/* Imagen grande */}
                     {selectedImage && (
-                      <img alt="Selected" src={selectedImage} className="img-card" style={{ width: '100%', height: 'auto', maxHeight: '100%' }} />
+                      <img alt="Selected" src={selectedImage} className="img-card" style={{ width:  '100%', height: '100%', maxHeight: '100%' }} />
                     )}
 
                     {/* Miniaturas */}
@@ -111,8 +111,8 @@ export const CardComponent = ({
                   </Box>
                 </Grid>
 
-                  <Grid item xs={12} md={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: { xs: '38em', sm: '31em', md: '100%' } }}>
-                    <Box sx={{ bgcolor: '#fff', borderRadius: 2, width: '100%', p: 3, maxHeight: { xs: '50%', md: '85vh' }, overflow: 'auto' }}>
+                  <Grid item xs={12} md={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Box sx={{ bgcolor: '#fff', borderRadius: 2, width: '100%', p: 3, maxHeight: '85vh', overflow: 'auto' }}>
                       <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
                         <Typography id="modal-modal-title" sx={{color: textColor, fontSize: {xs: 20, sm: 25, md: 30}}}>
                             {tituloCard}
@@ -124,25 +124,25 @@ export const CardComponent = ({
                         <Divider color={textColor} />
                           <CardContent>
                               <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
-                                <b>Ubicacion:</b> {ubicacion} <Link to="/Ubicacion">Ver</Link>
+                                <b style={{ marginRight: '0.5em' }}>Ubicacion:</b> {ubicacion} <Link to="/Ubicacion">Ver</Link>
                               </Typography>
                               <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
-                                <b>Camas:</b> {camas}
+                                <b style={{ marginRight: '0.5em' }}>Camas:</b> {camas}
                               </Typography>
                               <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
-                                <b>Ocupacion:</b> {ocupacion}
+                                <b style={{ marginRight: '0.5em' }}>Ocupacion:</b> {ocupacion}
                               </Typography>
                               <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
-                                <b>Baños:</b> {baños}
+                                <b style={{ marginRight: '0.5em' }}>Baños:</b> {baños}
                               </Typography>
                               <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
-                                <b>Cochera:</b> {cochera}
+                                <b style={{ marginRight: '0.5em' }}>Cochera:</b> {cochera}
                               </Typography>
                               <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
-                                <b>Vista al lago:</b> {vistaLago}
+                                <b style={{ marginRight: '0.5em' }}>Vista al lago:</b> {vistaLago}
                               </Typography>
                               <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 13, sm: 15}}}>
-                                <b>Descripción: </b> {descripcionModal}
+                                <b style={{ marginRight: '0.5em' }}>Descripción: </b> {descripcionModal}
                               </Typography>
                           </CardContent>
                         </Box>

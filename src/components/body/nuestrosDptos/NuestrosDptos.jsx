@@ -17,8 +17,19 @@ export const NuestrosDptos = ({
   de pelo. Servicio de limpieza. Servicios de comunicación y entretenimiento que incluyen wifi, TV en todos los 
   ambientes con acceso a plataformas de entretenimiento visual y libros y juegos de mesa. Servicio de atención 
   personalizada (administrador). `,
-  descripcionVerbena=``,
-  descripcionLupines=``,
+  descripcionVerbena=`ideal para la familia. Vista al lago. Ubicado en el centro. El edificio cuenta con ascensor 
+  y escalera. Departamento dos ambientes en el primer piso. Cochera. Amueblado. Cuenta con radiadores en todos 
+  los ambientes. Tres camas, un somier y dos camas de una plaza, equipadas con blanquearía Cocina equipada con 
+  electrodomésticos y vajilla. Baño equipado con toallas, productos de higiene personal y secador de pelo. 
+  Servicio de limpieza. Servicios de comunicación y entretenimiento que incluyen wifi, TV en todos los ambientes 
+  con acceso a plataformas de entretenimiento visual y libros y juegos de mesa. Servicio de atención 
+  personalizada (administrador). `,
+  descripcionLupines=` ideal para parejas. Ubicado en el centro. El edificio cuenta con ascensor y escalera. 
+  Departamento mono ambiente en el segundo piso. Amueblado. Cuenta con radiador en todos los ambientes. Una 
+  cama, somier, equipada con blanquearía. Cocina equipada con electrodomésticos y vajilla. Baño equipado con 
+  toallas, productos de higiene personal y secador de pelo. Servicio de limpieza. Servicios de comunicación y 
+  entretenimiento que incluyen wifi y TV en todos los ambientes con acceso a plataformas de entretenimiento. 
+  Servicio de atención personalizada (administrador).`,
 }) => {
   return (
     <>
@@ -55,7 +66,7 @@ export const NuestrosDptos = ({
           textColor='#424242'
           baños= '1'
           camas= '3'
-          ocupacion= 'hasta 4 personas.'
+          ocupacion= 'Hasta 4 personas.'
           cochera= 'Si.'
           vistaLago= 'Si.'
           descripcionModal= {descripcionAmancay}
@@ -71,11 +82,11 @@ export const NuestrosDptos = ({
           tituloCard = 'Verbena'
           descripcionCard='Aqui va una descripción.'
           textColor='#424242'
-          baños= 'Numero Baños'
-          camas= 'numero camas'
-          ocupacion= 'hasta n° personas'
-          cochera= 'si tiene o no cochera'
-          vistaLago= 'si tiene o no vista al lago'
+          baños= '1'
+          camas= '3'
+          ocupacion= 'Hasta 4 personas.'
+          cochera= 'Si.'
+          vistaLago= 'Si.'
           descripcionModal= {descripcionVerbena}
           ubicacion= '20 de Junio 781, San Carlos de Bariloche, Río Negro. - '
           />
@@ -90,10 +101,10 @@ export const NuestrosDptos = ({
           descripcionCard='Aqui va una descripción.'
           textColor='#424242'
           baños= 'Numero Baños'
-          camas= 'numero camas'
-          ocupacion= 'hasta n° personas'
-          cochera= 'si tiene o no cochera'
-          vistaLago= 'si tiene o no vista al lago'
+          camas= '1'
+          ocupacion= 'Hasta 2 personas.'
+          cochera= 'No.'
+          vistaLago= 'No.'
           descripcionModal= {descripcionLupines}
           ubicacion= 'España 334, San Carlos de Bariloche, Río Negro. - '
           />

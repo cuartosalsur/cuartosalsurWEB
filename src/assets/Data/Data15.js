@@ -6,8 +6,6 @@ import Foto8 from '../img/dpto15/fotoo8.jpg';
 import Foto9 from '../img/dpto15/fotoo9.jpg';
 import Foto10 from '../img/dpto15/fotoo10.jpg';
 import Foto11 from '../img/dpto15/fotoo11.jpg';
-import Foto13 from '../img/dpto15/fotoo13.jpg';
-import Foto14 from '../img/dpto15/fotoo14.jpg';
 
 
 export const itemData15 = [
@@ -41,14 +39,6 @@ export const itemData15 = [
       },
       {
         img: Foto11,
-        title: 'Departamento Verbena',
-      },
-      {
-        img: Foto13,
-        title: 'Departamento Verbena',
-      },
-      {
-        img: Foto14,
         title: 'Departamento Verbena',
       },
 ];
