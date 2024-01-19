@@ -11,7 +11,7 @@ import lgZoom from 'lightgallery/plugins/zoom';
 //data
 import { itemDataGeneral } from '../../../assets/Data/general';
 
-export const Galeria = ({titulo="Galería"}) => {
+export const Galeria = ({titulo="GALERÍA"}) => {
   return (
     <>
       <Grid
@@ -20,17 +20,18 @@ export const Galeria = ({titulo="Galería"}) => {
         alignItems={'center'}
         sx={{
           height: {xs: '100%', sm: '100vh'},
-          padding: {xs: '10% 5%', lg: '7% 5%'},
-          bgcolor: '#FFF'
+          padding: {xs: '10% 5%', lg: '5%'},
+          bgcolor: '#fff'
         }}
       >
         <Grid item xs={12} sx={{ marginBottom: { xs: '10%', md: '1%' } }}>
           <Typography
             sx={{
-              fontSize: {xs: '35px', lg: '50px'},
+              fontSize: {xs: '35px', lg: '60px'},
               fontWeight: '500',
-              color: 'secondary.main',
-              textAlign: 'center'
+              color: 'black',
+              textAlign: 'center',
+              mb: 2
             }}
           >{titulo}</Typography>
         </Grid>
@@ -41,7 +42,6 @@ export const Galeria = ({titulo="Galería"}) => {
           height:{ xs: '72vh', sm:'65vh'},  
           overflowX: 'auto', 
           textAlign: 'center',
-          boxShadow: '1px 2px 4px 1px'
           }}>
           <LightGallery
             speed={600}

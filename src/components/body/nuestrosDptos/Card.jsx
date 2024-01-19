@@ -9,7 +9,7 @@ const style = {
         left: '50%',
         transform: 'translate(-50%, -50%)',
         width: '90%',
-        bgcolor: 'background.paper',
+        bgcolor: '#E6F5A2',
         border: '2px solid #000',
         borderRadius: 2,
         boxShadow: 24,
@@ -45,23 +45,23 @@ export const CardComponent = ({
 
   return (
     <>
-    <Card sx={{ maxWidth: 500, height: 390, boxShadow: '1px 2px 4px 1px' }} className='cardBox'>
+    <Card sx={{ maxWidth: 500, height: 390, boxShadow: '1px 3px 5px 2px', bgcolor: '#E6F5A2' }} className='cardBox'>
       <CardMedia
         component={cardComponent || 'img'}
         alt="Dpto 13"
         height="200"
         image={foto}
       />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {tituloCard}
+      <CardContent sx={{textAlign: 'center', mt: 3}}>
+        <Typography gutterBottom variant="h5" component="div" color={'black'} fontSize={'27px'}>
+          <b>{tituloCard}</b>
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="black" fontSize={'20px'} >
           {descripcionCard}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small" onClick={handleOpen}>Leer mas</Button>
+      <CardActions >
+        <Button size="small" onClick={handleOpen} >Leer mas</Button>
       </CardActions>
     </Card>
 
@@ -86,8 +86,8 @@ export const CardComponent = ({
                 <Grid 
                 container 
                 >
-                 <Grid item xs={12} md={6} sx={{ display: { xs: 'none', md: 'flex' }, flexDirection: 'column', alignItems: 'center'}}>
-                  <Box sx={{ width:  '80%', height: '70vh' }}>
+                 <Grid item xs={12} md={7} sx={{ display: { xs: 'none', md: 'flex' }, flexDirection: 'column', alignItems: 'center'}}>
+                  <Box sx={{ width:  '75%', height: '70vh' }}>
                     {/* Imagen grande */}
                     {selectedImage && (
                       <img alt="Selected" src={selectedImage} className="img-card" style={{ width:  '100%', height: '100%', maxHeight: '100%' }} />
@@ -111,8 +111,8 @@ export const CardComponent = ({
                   </Box>
                 </Grid>
 
-                  <Grid item xs={12} md={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Box sx={{ bgcolor: '#fff', borderRadius: 2, width: '100%', p: 3, maxHeight: '85vh', overflow: 'auto' }}>
+                  <Grid item xs={12} md={5} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Box sx={{ bgcolor: '#4A5C49', borderRadius: 2, width: '100%', p: 3, maxHeight: '85vh', overflow: 'auto' }}>
                       <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
                         <Typography id="modal-modal-title" sx={{color: textColor, fontSize: {xs: 20, sm: 25, md: 30}}}>
                             {tituloCard}

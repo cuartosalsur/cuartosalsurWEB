@@ -7,8 +7,8 @@
 }
  
 *::-webkit-scrollbar-thumb {
-  background-color: #788199;
-  outline: 1px solid #666f88;
+  background-color: #000;
+  outline: 1px solid #000;
 }
 
 .img {
@@ -29,6 +29,11 @@
 .logo-footer {
     width: 24em;
     height: 19em;
+}
+
+.logo-inicio{
+    width: 35em;
+    height: 27em;
 }
 
 @media (max-width: 700px) {

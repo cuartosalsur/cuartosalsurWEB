@@ -5,7 +5,7 @@ import {AccountCircle, Mail, LocalPhone} from '@mui/icons-material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
 export const Contacto = ({
-  titulo = 'Contacto',
+  titulo = 'CONTACTO',
   p = `Puede comunicarse por cualquiera de los medios que ofrecemos. Su consulta es bienvenida.`,
 }) => {
 
@@ -48,14 +48,14 @@ export const Contacto = ({
         sx={{
           height: '100%',
           padding: {xs: '15% 5%', lg: '7% 5%'},
-          bgcolor: '#FFF'
+          bgcolor: 'black'
         }}
       >
         <Typography
           sx={{
-            fontSize: {xs: '35px', lg: '50px'},
+            fontSize: {xs: '35px', lg: '60px'},
             fontWeight: '500',
-            color: 'secondary.main',
+            color: 'third.main',
             marginBottom: {xs: '10%', md: '2%'},
           }}
         >{titulo}</Typography>
@@ -68,7 +68,7 @@ export const Contacto = ({
           <form ref={form} onSubmit={sendEmail}>
             <TextField 
               fullWidth 
-              color="primary" 
+              color="third" 
               focused 
               id="outlined-basic" 
               label="Nombre" 
@@ -86,7 +86,7 @@ export const Contacto = ({
 
             <TextField 
               fullWidth 
-              color="primary" 
+              color="third" 
               focused 
               id="outlined-basic" 
               label="Email" 
@@ -96,16 +96,16 @@ export const Contacto = ({
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
-                    <Mail />
+                    <Mail color='third'/>
                   </InputAdornment>
                 ),
               }}
-              sx={{marginTop: {xs: '10%', sm:'4%'}}}
+              sx={{marginTop: {xs: '10%', sm:'4%'} }}
             />
 
             <TextField 
               fullWidth 
-              color="primary" 
+              color="third" 
               focused 
               id="outlined-basic" 
               label="Número" 
@@ -124,7 +124,7 @@ export const Contacto = ({
 
             <TextField 
               fullWidth 
-              color="primary" 
+              color="third" 
               focused 
               multiline
               id="outlined-multiline-static"
@@ -142,6 +142,7 @@ export const Contacto = ({
               type="submit"
               sx={{ marginTop: { xs: '10%', sm: '4%' } }}
               onClick={sendEmail}
+              color='third'
             >
               Enviar
             </LoadingButton>
@@ -150,18 +151,18 @@ export const Contacto = ({
             
         <Grid item xs={12} sm={5} sx={{order: { xs: 1, sm: 2 }}}>
           <Box sx={{display: 'flex', flexDirection: 'column', gap: 5}}>
-            <Typography variant="h6" color="secondary">
+            <Typography variant="h6" color="third.main">
               {p}
             </Typography>
             <Box sx={{display: 'flex', flexDirection: {xs: 'row', sm: 'column', md:'row'}, alignItems: 'center', gap: 2}}>
-              <LocalPhone />
-              <Typography variant="h6" color="secondary">
+              <LocalPhone color='third'/>
+              <Typography variant="h6" color="third.main">
                 +54 11 5456 4929
             </Typography>
             </Box>
             <Box sx={{display: 'flex', flexDirection: {xs: 'row', sm: 'column', md:'row'}, alignItems: 'center', gap: 2}}>
-              <Mail />
-              <Typography variant="h6" color="secondary">
+              <Mail color='third'/>
+              <Typography variant="h6" color="third.main">
                 cuartosalsur@outlook.com
               </Typography>
             </Box>

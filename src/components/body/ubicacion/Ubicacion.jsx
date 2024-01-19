@@ -8,7 +8,7 @@ const Mapas = {
 };
 
 export const Ubicacion = ({
-  titulo = 'Ubicacion',
+  titulo = 'UBICACION',
 }) => {
   const [selectedMap, setSelectedMap] = useState('one');
 
@@ -23,8 +23,8 @@ export const Ubicacion = ({
         alignItems={'center'}
         sx={{
           height: {xs: '100%', sm: '100vh'},
-          padding: {xs: '15% 5%', lg: '7% 5%'},
-          bgcolor: '#FFF'
+          padding: {xs: '15% 5%', lg: '5%'},
+          bgcolor: '#4A5C49'
         }}
       >
 
@@ -37,9 +37,9 @@ export const Ubicacion = ({
         <Grid item xs={12} sm={8} md={9}>
         <Typography
           sx={{
-            fontSize: {xs: '35px', lg: '50px'},
+            fontSize: {xs: '35px', lg: '60px'},
             fontWeight: '500',
-            color: 'secondary.main',
+            color: 'third.main',
             marginBottom: {xs: '10%', md: '2%'},
             textAlign: 'center'
           }}
@@ -68,6 +68,7 @@ export const Ubicacion = ({
               key="one"
               variant={selectedMap === 'one' ? 'contained' : 'outlined'}
               onClick={() => handleButtonClick('one')}
+              color='third'
             >
               Amancay
             </Button>
@@ -75,6 +76,7 @@ export const Ubicacion = ({
               key="two"
               variant={selectedMap === 'two' ? 'contained' : 'outlined'}
               onClick={() => handleButtonClick('two')}
+              color='third'
             >
               Verbena
             </Button>
@@ -82,6 +84,7 @@ export const Ubicacion = ({
               key="three"
               variant={selectedMap === 'three' ? 'contained' : 'outlined'}
               onClick={() => handleButtonClick('three')}
+              color='third'
             >
               Lupines
             </Button>

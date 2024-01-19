@@ -9,7 +9,7 @@ import foto2 from '../../../assets/img/dpto15/fotoo6.jpg';
 import foto3 from '../../../assets/img/España/foto2.jpg';
 
 export const NuestrosDptos = ({
-  titulo = 'Nuestros Departamentos',
+  titulo = 'NUESTROS DEPARTAMENTOS',
   descripcionAmancay= `ideal para la familia. Vista al lago. Ubicado en el centro. El edificio cuenta con 
   ascensor y escalera. Departamento dos ambientes en el primer piso. Cochera. Amueblado. Cuenta con radiadores 
   en todos los ambientes. Tres camas, un somier y dos camas de una plaza, equipadas con blanquearía. Cocina 
@@ -45,10 +45,10 @@ export const NuestrosDptos = ({
       >
         <Typography
           sx={{
-            fontSize: {xs: '35px', lg: '50px'},
+            fontSize: {xs: '35px', lg: '60px'},
             fontWeight: '500',
-            color: 'secondary.main',
-            marginBottom: {xs: '10%', md: '2%'},
+            color: 'black',
+            marginBottom: {xs: '10%', md: '4%'},
           }}
         >{titulo}</Typography>
 
@@ -62,7 +62,7 @@ export const NuestrosDptos = ({
           foto={foto1} 
           bgColorModal='#000252'
           tituloCard = 'Amancay'
-          descripcionCard='Aqui va una descripción.'
+          descripcionCard='Ideal para familias.'
           textColor='#424242'
           baños= '1'
           camas= '3'
@@ -78,10 +78,10 @@ export const NuestrosDptos = ({
         <CardComponent 
           fotosLista={itemData15} 
           foto={foto2} 
-          bgColorModal='#4C0052'
+          bgColorModal='#8D9477'
           tituloCard = 'Verbena'
-          descripcionCard='Aqui va una descripción.'
-          textColor='#424242'
+          descripcionCard='Ideal para familias.'
+          textColor='#fff'
           baños= '1'
           camas= '3'
           ocupacion= 'Hasta 4 personas.'
@@ -96,10 +96,10 @@ export const NuestrosDptos = ({
         <CardComponent 
           fotosLista={itemDataEspaña} 
           foto={foto3} 
-          bgColorModal='#EE8B85'
+          bgColorModal='#4A5C49'
           tituloCard = 'Lupines'
-          descripcionCard='Aqui va una descripción.'
-          textColor='#424242'
+          descripcionCard='Ideal para parejas.'
+          textColor='black'
           baños= 'Numero Baños'
           camas= '1'
           ocupacion= 'Hasta 2 personas.'
