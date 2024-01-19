@@ -13,6 +13,6 @@ export const generalTheme = createTheme({
         },
     },
     typography: {
-        fontFamily: ['Poppins', 'Nunito', 'Roboto'].join(','),
+        fontFamily: ['Montserrat', 'Roboto'].join(','),
       },
 })

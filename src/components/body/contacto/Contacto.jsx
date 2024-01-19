@@ -48,15 +48,14 @@ export const Contacto = ({
         sx={{
           height: '100%',
           padding: {xs: '15% 5%', lg: '7% 5%'},
-          bgcolor: '#FDF2D9'
+          bgcolor: '#FFF'
         }}
       >
         <Typography
           sx={{
-            fontFamily: 'Kalam',
             fontSize: {xs: '35px', lg: '50px'},
             fontWeight: '500',
-            color: 'primary.main',
+            color: 'secondary.main',
             marginBottom: {xs: '10%', md: '2%'},
           }}
         >{titulo}</Typography>

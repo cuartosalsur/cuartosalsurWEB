@@ -1,14 +1,17 @@
 import { Typography, Grid, Box } from '@mui/material';
 import {Wifi, Weekend, LocalParking, SupervisorAccount} from '@mui/icons-material';
-//logo
-import Logo from '../../../assets/img/logo2.png';
 
 export const Nosotros = ({
   titulo = 'Nosotros',
-  p = `lorem ipsum dolor sit amet, consectetur adiplo lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
-  lorem ipsum dolor sit amet, consectetur adiplo lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem 
-  ipsum dolor sit amet, consectetur adiplo lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum 
-  dolor sit amet, consectetur adiplo lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor dolor sit amet, consectetur adiplo lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor`,
+  p = `Sabemos que viajar puede ser muy cansador, por es eso, desde que abrimos nuestras puertas hemos tenido 
+  un sólo objetivo en mente: ofrecer a nuestros huéspedes una opción ideal para su alojamiento y hacer que su 
+  visita sea especial. Cuartos al Sur, donde se unen el estilo, el confort y la hospitalidad, tiene todo lo que 
+  necesitas: excelente ubicación con vista al lago, parking, departamentos amplios y completamente equipados, 
+  servicios de limpieza, servicios de comunicación y entretenimiento y servicio de atención personalizada. 
+  Somos la combinación perfecta de confort y conveniencia que te garantiza la atención y la comodidad que te 
+  mereces haciendo que tu experiencia con nosotros sea única e irrepetible. Navega por nuestro sitio web para 
+  encontrar más información sobre nuestras habitaciones, servicios e instalaciones; contáctanos en caso de tener 
+  dudas. ¡Esperamos recibirte pronto!`,
 }) => {
   return (
     <>
@@ -19,7 +22,7 @@ export const Nosotros = ({
         sx={{
           height: {xs: '100%', sm: '100vh'},
           padding: {xs: '15% 5%', lg: '7% 5%'},
-          bgcolor: '#FDF2D9'
+          bgcolor: '#FFF'
         }}
       >
         <Grid 
@@ -28,13 +31,12 @@ export const Nosotros = ({
         alignItems={'center'}
         spacing={10}
         >
-            <Grid item xs={12} sm={7}>
+            <Grid item xs={12} sm={8}>
             <Typography
               sx={{
-                fontFamily: 'Kalam',
                 fontSize: {xs: '35px', lg: '50px'},
                 fontWeight: '500',
-                color: 'primary.main',
+                color: 'secondary.main',
                 marginBottom: {xs: '10%', md: '2%'},
                 textAlign: 'center'
               }}
@@ -50,7 +52,7 @@ export const Nosotros = ({
               </Typography>
             </Grid>
                 
-            <Grid item xs={12} sm={5} sx={{marginTop: {xs: '20px', sm: 0}, display: 'flex', justifyContent: 'center', gap: 5}}>
+            <Grid item xs={12} sm={4} sx={{marginTop: {xs: '20px', sm: 0}, display: 'flex', justifyContent: 'center', gap: 5}}>
               <Grid>
                 <Box sx={{width: '8em', height: '8em', backgroundColor: '#fff', border: '1px solid #424242', marginBottom: 5, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
                   <Wifi fontSize="large"/>

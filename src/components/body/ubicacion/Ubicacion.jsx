@@ -24,7 +24,7 @@ export const Ubicacion = ({
         sx={{
           height: {xs: '100%', sm: '100vh'},
           padding: {xs: '15% 5%', lg: '7% 5%'},
-          bgcolor: '#FDF2D9'
+          bgcolor: '#FFF'
         }}
       >
 
@@ -37,10 +37,9 @@ export const Ubicacion = ({
         <Grid item xs={12} sm={8} md={9}>
         <Typography
           sx={{
-            fontFamily: 'Kalam',
             fontSize: {xs: '35px', lg: '50px'},
             fontWeight: '500',
-            color: 'primary.main',
+            color: 'secondary.main',
             marginBottom: {xs: '10%', md: '2%'},
             textAlign: 'center'
           }}
@@ -84,7 +83,7 @@ export const Ubicacion = ({
               variant={selectedMap === 'three' ? 'contained' : 'outlined'}
               onClick={() => handleButtonClick('three')}
             >
-              Mariposa Blanca
+              Lupines
             </Button>
           </ButtonGroup>
           </Box>       

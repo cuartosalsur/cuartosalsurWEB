@@ -7,7 +7,7 @@ import Logo from '../../assets/img/logo.png';
 export const Inicio = () => {
   return (
     <>
-    <Grid container sx={{ position: 'relative', backgroundColor: '#FDF2D9' }}>
+    <Grid container sx={{ position: 'relative', backgroundColor: '#FFF' }}>
       <Grid item xs={12} sx={{ position: 'relative' }}>
         <img src={Foto1} alt="Fondo" className='img' />
         <Grid 

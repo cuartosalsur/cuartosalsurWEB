@@ -8,7 +8,7 @@ import Logo from '../../assets/img/logo.png';
 export const Footer = () => {
   return (
     <>
-      <div sx={{ backgroundColor: '#FDF2D9' }}>
+      <div sx={{ backgroundColor: '#FFF' }}>
         <Grid 
         container 
         sx={{ height: '90vh', position: 'relative'}}>

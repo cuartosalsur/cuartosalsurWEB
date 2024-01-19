@@ -1,15 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {Card, CardMedia, CardContent, Typography, Button, CardActions, Modal, Box, Grid, Divider, ImageList, ImageListItem} from '@mui/material';
-//Light Gallery
-import LightGallery from 'lightgallery/react';
-// import styles
-import 'lightgallery/css/lightgallery.css';
-import 'lightgallery/css/lg-zoom.css';
-import 'lightgallery/css/lg-thumbnail.css';
-// import plugins if you need
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import lgZoom from 'lightgallery/plugins/zoom';
+import {Card, CardMedia, CardContent, Typography, Button, CardActions, Modal, Box, Grid, Divider} from '@mui/material';
 
 const style = {
     boxStyle:{
@@ -45,6 +36,12 @@ export const CardComponent = ({
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+
+    const [selectedImage, setSelectedImage] = useState(fotosLista && fotosLista.length > 0 ? fotosLista[0].img : null);
+
+    const handleThumbnailClick = (thumbnailUrl) => {
+      setSelectedImage(thumbnailUrl);
+    };
 
   return (
     <>
@@ -84,67 +81,71 @@ export const CardComponent = ({
                 p: 2,  
                 width: '100%',
                 height: '90vh',
-                overflow: 'auto'
                 }} >
                 <Grid 
                 container 
-                spacing={10}
+                spacing={5}
                 >
-                  <Grid item xs={12} sm={5} sx={{order: { xs: 2, sm: 1 }}}>
-                      <Box sx={{ height: '80vh', overflow: 'auto' }}>
-                        <LightGallery
-                          speed={600}
-                          plugins={[lgThumbnail, lgZoom]}
-                          licenseKey={''}
-                          className="Light-Card"
-                        >
-                          {fotosLista && fotosLista.length > 0 && fotosLista.map((item) => (
-                            <a key={item.img} href={item.img} >
-                              <img alt={item.title} src={item.img} className="img-card" />
-                            </a>
-                          ))}
-                        </LightGallery>
-                      </Box>                        
-                  </Grid>
+                 <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: { xs: '15em', sm: '20em',md: 'auto' }}}>
+                  <Box sx={{ width: { xs: '70%', sm: '50%', md: '80%' }, maxHeight: { xs: '100%', md: '70vh' } }}>
+                    {/* Imagen grande */}
+                    {selectedImage && (
+                      <img alt="Selected" src={selectedImage} className="img-card" style={{ width: '100%', height: 'auto', maxHeight: '100%' }} />
+                    )}
 
-                  <Grid item xs={12} sm={7} sx={{order: { xs: 1, sm: 2 }, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Box sx={{bgcolor: '#fff', borderRadius: 2, height: {xs: '100%', md:'80vh'}, width: '100%', p: 3}}>
-                      <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
-                      <Typography id="modal-modal-title" sx={{color: textColor, fontSize: {xs: 20, sm: 25, md: 30}}}>
-                          {tituloCard}
-                      </Typography>
-                      <Button onClick={handleClose} sx={{color: textColor}} >
-                          cerrar
-                      </Button>
-                      </Box>
-                      <Divider color={textColor} />
-                      <CardContent>
-                          <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                            <b>Ubicacion:</b> {ubicacion} <Link to="/Ubicacion">Ver</Link>
-                          </Typography>
-                          <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                            <b>Camas:</b> {camas}
-                          </Typography>
-                          <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                            <b>Ocupacion:</b> {ocupacion}
-                          </Typography>
-                          <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                            <b>Baños:</b> {baños}
-                          </Typography>
-                          <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                            <b>Cochera:</b> {cochera}
-                          </Typography>
-                          <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 17, sm: 20}}}>
-                            <b>Vista al lago:</b> {vistaLago}
-                          </Typography>
-                          <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 17, sm: 20}}}>
-                            <b>Descripción: </b>  
-                          </Typography>
-                          <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 15, sm: 18}}}>
-                            {descripcionModal}
-                          </Typography>
-                      </CardContent>
+                    {/* Miniaturas */}
+                    <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, marginTop: 2, width: '100%' }}>
+                      {fotosLista &&
+                        fotosLista.length > 0 &&
+                        fotosLista.slice(0, 3).map((item) => (
+                          <img
+                            key={item.img}
+                            alt={item.title}
+                            src={item.img}
+                            className="img-card"
+                            style={{ width: '80px', height: '80px', cursor: 'pointer' }}
+                            onClick={() => handleThumbnailClick(item.img)}
+                          />
+                        ))}
                     </Box>
+                  </Box>
+                </Grid>
+
+                  <Grid item xs={12} md={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: { xs: '38em', sm: '31em', md: '100%' } }}>
+                    <Box sx={{ bgcolor: '#fff', borderRadius: 2, width: '100%', p: 3, maxHeight: { xs: '50%', md: '85vh' }, overflow: 'auto' }}>
+                      <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
+                        <Typography id="modal-modal-title" sx={{color: textColor, fontSize: {xs: 20, sm: 25, md: 30}}}>
+                            {tituloCard}
+                        </Typography>
+                        <Button onClick={handleClose} sx={{color: textColor}} >
+                            cerrar
+                        </Button>
+                      </Box>
+                        <Divider color={textColor} />
+                          <CardContent>
+                              <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
+                                <b>Ubicacion:</b> {ubicacion} <Link to="/Ubicacion">Ver</Link>
+                              </Typography>
+                              <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
+                                <b>Camas:</b> {camas}
+                              </Typography>
+                              <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
+                                <b>Ocupacion:</b> {ocupacion}
+                              </Typography>
+                              <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
+                                <b>Baños:</b> {baños}
+                              </Typography>
+                              <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
+                                <b>Cochera:</b> {cochera}
+                              </Typography>
+                              <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
+                                <b>Vista al lago:</b> {vistaLago}
+                              </Typography>
+                              <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 13, sm: 15}}}>
+                                <b>Descripción: </b> {descripcionModal}
+                              </Typography>
+                          </CardContent>
+                        </Box>
                   </Grid>
                 </Grid>
             </Box>
