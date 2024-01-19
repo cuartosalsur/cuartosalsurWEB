@@ -60,25 +60,3 @@ export const Galeria = ({titulo="Galería"}) => {
   )
 }
 
-/*
- <ImageList 
-    sx={{ 
-      width: '100%',
-      height: '60vh',
-      }} 
-      rowHeight={164}
-      >
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={item.img}
-            alt={item.title}
-            loading="lazy"
-            onClick={() => handleOpenImg(item.img)}
-            className='img-small'
-          />
-        </ImageListItem>
-      ))}
-  </ImageList>
-*/
-

@@ -17,28 +17,28 @@ import Foto16 from '../img/España/foto16.jpg';
 
 
 export const itemDataEspaña = [
+    {
+        img: Foto2,
+        title: 'Departamento Lupines',
+    },
+    {
+        img: Foto5,
+        title: 'Departamento Lupines',
+    },
+    {
+        img: Foto6,
+        title: 'Departamento Lupines',
+    },
+    {
+        img: Foto4,
+        title: 'Departamento Lupines',
+    },
   {
       img: Foto1,
       title: 'Departamento Lupines',
   },
   {
-      img: Foto2,
-      title: 'Departamento Lupines',
-  },
-  {
       img: Foto3,
-      title: 'Departamento Lupines',
-  },
-  {
-      img: Foto4,
-      title: 'Departamento Lupines',
-  },
-  {
-      img: Foto5,
-      title: 'Departamento Lupines',
-  },
-  {
-      img: Foto6,
       title: 'Departamento Lupines',
   },
   {

@@ -9,16 +9,16 @@ import Foto11 from '../img/dpto15/fotoo11.jpg';
 
 
 export const itemData15 = [
+  {
+    img: Foto6,
+    title: 'Departamento Verbena',
+  },
       {
         img: Foto2,
         title: 'Departamento Verbena',
       },
     {
         img: Foto3,
-        title: 'Departamento Verbena',
-      },
-      {
-        img: Foto6,
         title: 'Departamento Verbena',
       },
       {

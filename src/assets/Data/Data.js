@@ -21,6 +21,14 @@ import Foto21 from '../img/dpto13/img21.jpg';
 
 export const itemData = [
   {
+    img: Foto10,
+    title: 'Departamento Amancay',
+  },
+  {
+    img: Foto5,
+    title: 'Departamento Amancay',
+  },
+  {
     img: Foto3,
     title: 'Departamento Amancay',
   },
@@ -29,7 +37,7 @@ export const itemData = [
     title: 'Departamento Amancay',
   },
   {
-    img: Foto5,
+    img: Foto15,
     title: 'Departamento Amancay',
   },
   {
@@ -66,10 +74,6 @@ export const itemData = [
   },
   {
     img: Foto14,
-    title: 'Departamento Amancay',
-  },
-  {
-    img: Foto15,
     title: 'Departamento Amancay',
   },
   {
