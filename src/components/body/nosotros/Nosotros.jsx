@@ -31,7 +31,7 @@ export const Nosotros = ({
         alignItems={'center'}
         spacing={10}
         >
-          <Grid item xs={12} sm={8}>
+          <Grid item xs={12} md={8}>
             <Typography
               sx={{
                 fontSize: {xs: '35px', lg: '60px'},
@@ -52,7 +52,7 @@ export const Nosotros = ({
               </Typography>
             </Grid>
                 
-            <Grid item xs={12} sm={4} sx={{marginTop: {xs: '20px', sm: 0}, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <Grid item xs={12} md={4} sx={{marginTop: {xs: '20px', sm: 0}, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
 
           </Grid>
         </Grid>

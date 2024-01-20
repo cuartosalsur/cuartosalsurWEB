@@ -89,7 +89,7 @@ export const Contacto = ({
       container 
       spacing={10}
       >
-        <Grid item xs={12} sm={7} sx={{order: { xs: 2, sm: 1 }}}>
+        <Grid item xs={12} md={7} sx={{order: { xs: 2, md: 1 }}}>
           <form ref={form} onSubmit={sendEmail}>
             <BootstrapInput 
               id="bootstrap-input"
@@ -118,7 +118,7 @@ export const Contacto = ({
               fullWidth 
               id="bootstrap-input"
               multiline
-              rows={4}
+              rows={5}
               name="message" 
               defaultValue="Dejanos tu consulta aquí.."
               sx={{marginTop: {xs: '10%', sm:'4%'}}}
@@ -138,24 +138,24 @@ export const Contacto = ({
           </form>
         </Grid>
             
-        <Grid item xs={12} sm={5} sx={{order: { xs: 1, sm: 2 }}}>
+        <Grid item xs={12} md={5} sx={{order: { xs: 1, md: 2 }}}>
           <Box sx={{display: 'flex', flexDirection: 'column', gap: 5}}>
             <Typography variant="h6" color="third.main">
               {p}
             </Typography>
-            <Box sx={{display: 'flex', flexDirection: {xs: 'row', sm: 'column', md:'row'}, alignItems: 'center', gap: 2}}>
+            <Box sx={{display: 'flex', flexDirection: {xs: 'row'}, alignItems: 'center', gap: 2}}>
               <LocalPhone color='third'/>
               <Typography variant="h6" color="third.main">
                 +54 11 5456 4929
             </Typography>
             </Box>
-            <Box sx={{display: 'flex', flexDirection: {xs: 'row', sm: 'column', md:'row'}, alignItems: 'center', gap: 2}}>
+            <Box sx={{display: 'flex', flexDirection: {xs: 'row'}, alignItems: 'center', gap: 2}}>
               <Mail color='third'/>
               <Typography variant="h6" color="third.main">
                 cuartosalsur@outlook.com
               </Typography>
             </Box>
-            <Box sx={{display: 'flex', flexDirection: {xs: 'row', sm: 'column', md:'row'}, alignItems: 'center', gap: 2}}>
+            <Box sx={{display: 'flex', flexDirection: {xs: 'row'}, alignItems: 'center', gap: 2}}>
               <Instagram color='third'/>
               <Typography variant="h6" color="third.main">
                 Instagram-name

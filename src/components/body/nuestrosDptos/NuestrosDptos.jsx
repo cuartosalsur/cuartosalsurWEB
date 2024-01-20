@@ -38,7 +38,7 @@ export const NuestrosDptos = ({
         justifyContent={'center'}
         alignItems={'center'}
         sx={{
-          height: {xs:'100%', sm: '100vh'},
+          height: {xs:'100%', md: '100vh'},
           padding: {xs: '15% 5%', lg: '7% 5%'},
           bgcolor: '#FFF'
         }}
@@ -55,8 +55,9 @@ export const NuestrosDptos = ({
       <Grid 
       container 
       spacing={10}
+      justifyContent={'center'}
       >
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <CardComponent 
           fotosLista={itemData} 
           foto={foto1} 
@@ -74,7 +75,7 @@ export const NuestrosDptos = ({
           />
         </Grid>
 
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={6} md={4}>
         <CardComponent 
           fotosLista={itemData15} 
           foto={foto2} 
@@ -92,7 +93,7 @@ export const NuestrosDptos = ({
           />
         </Grid>
 
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={6} md={4}>
         <CardComponent 
           fotosLista={itemDataEspaña} 
           foto={foto3} 
