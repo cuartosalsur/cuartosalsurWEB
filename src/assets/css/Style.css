@@ -46,6 +46,10 @@
         width: 19em;
         height: 15em;
     }
+    .logo-inicio{
+        width: 25em;
+        height: 18em;
+    }
   }
 
 .cardBox:hover {   
@@ -66,7 +70,12 @@
 a {
     text-decoration: none;
     margin-left: 2%;
+    color: #fff;
 }
+
+a:hover {
+    color: blue;
+  }
 
 .a-light{
     display: inline-block;

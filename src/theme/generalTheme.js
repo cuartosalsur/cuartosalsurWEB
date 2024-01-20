@@ -6,7 +6,7 @@ export const generalTheme = createTheme({
             main: '#4A5C49'
         },
         secondary:{
-            main: '#424242'
+            main: '#000'
         },
         third:{
             main: '#FFF'

@@ -1,8 +1,33 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Grid, Typography, TextField, InputAdornment, Button, Box, Snackbar, Alert, AlertTitle } from '@mui/material';
-import {AccountCircle, Mail, LocalPhone} from '@mui/icons-material';
+import { Grid, Typography, InputBase, Box, Snackbar, Alert, AlertTitle } from '@mui/material';
+import { alpha, styled } from '@mui/material/styles';
+import { Mail, LocalPhone, Instagram} from '@mui/icons-material';
 import LoadingButton from '@mui/lab/LoadingButton';
+
+const BootstrapInput = styled(InputBase)(({ theme }) => ({
+  'label + &': {
+    marginTop: theme.spacing(3),
+  },
+  '& .MuiInputBase-input': {
+    borderRadius: 4,
+    position: 'relative',
+    backgroundColor: theme.palette.mode === 'light' ? '#F3F6F9' : '#1A2027',
+    border: '1px solid',
+    borderColor: theme.palette.mode === 'light' ? '#E0E3E7' : '#2D3843',
+    fontSize: 22,
+    padding: '10px 12px',
+    transition: theme.transitions.create([
+      'border-color',
+      'background-color',
+      'box-shadow',
+    ]),
+    '&:focus': {
+      boxShadow: `${alpha(theme.palette.primary.main, 0.25)} 0 0 0 0.2rem`,
+      borderColor: theme.palette.primary.main,
+    },
+  },
+}));
 
 export const Contacto = ({
   titulo = 'CONTACTO',
@@ -47,7 +72,7 @@ export const Contacto = ({
         alignItems={'center'}
         sx={{
           height: '100%',
-          padding: {xs: '15% 5%', lg: '7% 5%'},
+          padding: {xs: '15% 5%', lg: '5%'},
           bgcolor: 'black'
         }}
       >
@@ -66,83 +91,47 @@ export const Contacto = ({
       >
         <Grid item xs={12} sm={7} sx={{order: { xs: 2, sm: 1 }}}>
           <form ref={form} onSubmit={sendEmail}>
-            <TextField 
-              fullWidth 
-              color="third" 
-              focused 
-              id="outlined-basic" 
-              label="Nombre" 
-              name="user_name"
-              variant="outlined"  
+            <BootstrapInput 
+              id="bootstrap-input"
+              fullWidth  
+              name="user_name" 
               defaultValue="Nombre"
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <AccountCircle />
-                  </InputAdornment>
-                ),
-              }}
             />
 
-            <TextField 
+            <BootstrapInput 
               fullWidth 
-              color="third" 
-              focused 
-              id="outlined-basic" 
-              label="Email" 
-              name="user_email"
-              variant="outlined"  
+              id="bootstrap-input"
+              name="user_email" 
               defaultValue="correo@ejemplo.com"
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <Mail color='third'/>
-                  </InputAdornment>
-                ),
-              }}
               sx={{marginTop: {xs: '10%', sm:'4%'} }}
             />
 
-            <TextField 
+            <BootstrapInput
               fullWidth 
-              color="third" 
-              focused 
-              id="outlined-basic" 
-              label="Número" 
-              name="user_phone"
-              variant="outlined"  
-              defaultValue="+54 11 123 456 78"
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <LocalPhone />
-                  </InputAdornment>
-                ),
-              }}
+              id="bootstrap-input"
+              name="user_phone" 
+              defaultValue="Número"
               sx={{marginTop: {xs: '10%', sm:'4%'}}}
             />
 
-            <TextField 
+            <BootstrapInput 
               fullWidth 
-              color="third" 
-              focused 
+              id="bootstrap-input"
               multiline
-              id="outlined-multiline-static"
               rows={4}
-              label="Mensaje" 
-              name="message"
-              variant="outlined"  
+              name="message" 
               defaultValue="Dejanos tu consulta aquí.."
               sx={{marginTop: {xs: '10%', sm:'4%'}}}
             />
 
             <LoadingButton
               loading={loading}
-              variant="outlined"
+              variant="contained"
               type="submit"
               sx={{ marginTop: { xs: '10%', sm: '4%' } }}
               onClick={sendEmail}
               color='third'
+              size='large'
             >
               Enviar
             </LoadingButton>
@@ -164,6 +153,12 @@ export const Contacto = ({
               <Mail color='third'/>
               <Typography variant="h6" color="third.main">
                 cuartosalsur@outlook.com
+              </Typography>
+            </Box>
+            <Box sx={{display: 'flex', flexDirection: {xs: 'row', sm: 'column', md:'row'}, alignItems: 'center', gap: 2}}>
+              <Instagram color='third'/>
+              <Typography variant="h6" color="third.main">
+                Instagram-name
               </Typography>
             </Box>
           </Box>

@@ -1,5 +1,5 @@
 import { Typography, Grid, Box } from '@mui/material';
-import {Wifi, Weekend, LocalParking, SupervisorAccount} from '@mui/icons-material';
+import {Wifi, Weekend, LocalParking, SupervisorAccount, AirplanemodeActive, CleaningServices} from '@mui/icons-material'; 
 
 export const Nosotros = ({
   titulo = 'NOSOTROS',
@@ -20,8 +20,8 @@ export const Nosotros = ({
         justifyContent={'center'}
         alignItems={'center'}
         sx={{
-          height: {xs: '100%', sm: '100vh'},
-          /*padding: {xs: '15% 5%', lg: '7% 5%'},*/
+          height: {xs: '100%', md: '90vh' },
+          padding: {xs: '15% 5%', lg: '7% 5%'},
           bgcolor: '#4A5C49'
         }}
       >
@@ -31,7 +31,7 @@ export const Nosotros = ({
         alignItems={'center'}
         spacing={10}
         >
-            <Grid item xs={12} sm={8}>
+          <Grid item xs={12} sm={8}>
             <Typography
               sx={{
                 fontSize: {xs: '35px', lg: '60px'},
@@ -52,51 +52,55 @@ export const Nosotros = ({
               </Typography>
             </Grid>
                 
-            <Grid item xs={12} sm={4} sx={{marginTop: {xs: '20px', sm: 0}, display: 'flex', justifyContent: 'center', gap: 5}}>
-              <Grid>
-                <Box sx={{width: '8em', height: '8em', backgroundColor: '#E6F5A2', border: '1px solid #424242', marginBottom: 5, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
-                  <Wifi fontSize="large" />
-                  <Typography>Free Wifi</Typography>
-                </Box>
-                <Box sx={{width: '8em', height: '8em', backgroundColor: '#fffe', border: '1px solid #424242', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
-                <Weekend fontSize="large"/>
-                  <Typography>Fully Furnished</Typography>
-                </Box>
-              </Grid>
-              <Grid>
-                <Box sx={{width: '8em', height: '8em', backgroundColor: '#E6F5A2', border: '1px solid #424242', marginBottom: 5, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
-                <SupervisorAccount fontSize="large"/>
-                  <Typography>Admin Service</Typography>
-                </Box>
-                <Box sx={{width: '8em', height: '8em', backgroundColor: '#fffe', border: '1px solid #424242', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
-                <LocalParking fontSize="large"/>
-                  <Typography>Free Parking</Typography>
-                </Box>
-              </Grid>
-            </Grid>
+            <Grid item xs={12} sm={4} sx={{marginTop: {xs: '20px', sm: 0}, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+
           </Grid>
+        </Grid>
       </Grid>
       <Grid
         container
-        justifyContent={'center'}
+        justifyContent={'space-around'}
         alignItems={'center'}
         flexDirection={'row'}
         sx={{
-          height: {xs:'30vh'},
-          /*padding: {xs: '15% 5%', lg: '7% 5%'},*/
+          height: {xs:'45vh', sm: '35vh', md: '30vh', lg: '25vh' },
           bgcolor: '#E6F5A2'
         }}
-      >
-        
-        <Box sx={{width: '8em', height: '8em', backgroundColor: '#E6F5A2', border: '1px solid trasparent', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                  <Wifi fontSize="large" />
-                  <Typography color="#4A5C49" sx={{fontSize: '25px'}}><b>Free Wifi</b></Typography>
-                </Box>
-                <Box sx={{width: '8em', height: '8em', backgroundColor: '#fffe', border: '1px solid #424242', display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
-                <Weekend fontSize="large"/>
-                  <Typography>Fully Furnished</Typography>
-                </Box>
+      > 
+      <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+          <Wifi fontSize="large" color='primary' />
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '19px', md:'25px'}}}><b>Free Wifi</b></Typography>
+        </Box>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+          <Weekend fontSize="large" color='primary' />
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '19px', md:'25px'}}}><b>Fully</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '19px', md:'25px'}}}><b>Furnished</b></Typography>
+        </Box>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+          <SupervisorAccount fontSize="large" color='primary' />
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '19px', md:'25px'}}}><b>Administration</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '19px', md:'25px'}}}><b>Service</b></Typography>
+        </Box>
+      </Grid>
+      <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+          <LocalParking fontSize="large" color='primary' />
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>Free</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>Parking</b></Typography>
+        </Box>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+          <CleaningServices fontSize="large" color='primary' />
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>Cleaning</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>Service</b></Typography>
+        </Box>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+          <AirplanemodeActive fontSize="large" color='primary' />
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>Airport</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>30′</b></Typography>
+        </Box>
+      </Grid>
       </Grid>
     </>
   );
-};
+}; 

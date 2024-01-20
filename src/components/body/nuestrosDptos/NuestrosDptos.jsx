@@ -47,7 +47,7 @@ export const NuestrosDptos = ({
           sx={{
             fontSize: {xs: '35px', lg: '60px'},
             fontWeight: '500',
-            color: 'black',
+            color: 'secondary.main',
             marginBottom: {xs: '10%', md: '4%'},
           }}
         >{titulo}</Typography>
@@ -60,10 +60,10 @@ export const NuestrosDptos = ({
           <CardComponent 
           fotosLista={itemData} 
           foto={foto1} 
-          bgColorModal='#000252'
+          bgColorModal='#8D9477'
           tituloCard = 'Amancay'
           descripcionCard='Ideal para familias.'
-          textColor='#424242'
+          textColor='#fff'
           baños= '1'
           camas= '3'
           ocupacion= 'Hasta 4 personas.'
@@ -96,10 +96,10 @@ export const NuestrosDptos = ({
         <CardComponent 
           fotosLista={itemDataEspaña} 
           foto={foto3} 
-          bgColorModal='#4A5C49'
+          bgColorModal='#8D9477'
           tituloCard = 'Lupines'
           descripcionCard='Ideal para parejas.'
-          textColor='black'
+          textColor='#fff'
           baños= 'Numero Baños'
           camas= '1'
           ocupacion= 'Hasta 2 personas.'

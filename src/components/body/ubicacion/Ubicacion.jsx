@@ -34,7 +34,7 @@ export const Ubicacion = ({
       alignItems={'center'}
       spacing={5}
       >
-        <Grid item xs={12} sm={8} md={9}>
+        <Grid item xs={12} sm={9} md={10}>
         <Typography
           sx={{
             fontSize: {xs: '35px', lg: '60px'},
@@ -58,11 +58,13 @@ export const Ubicacion = ({
         </Box>
         </Grid>
             
-        <Grid item xs={12} sm={4} md={3} >
+        <Grid item xs={12} sm={3} md={2} >
           <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <ButtonGroup
             orientation="vertical"
             aria-label="vertical outlined button group"
+            fullWidth
+            size="large"
           >
             <Button
               key="one"

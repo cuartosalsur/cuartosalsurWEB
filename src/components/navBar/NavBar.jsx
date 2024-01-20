@@ -19,22 +19,22 @@ export const NavBar = () => {
               gap: '3%'
             }}
           >
-            <Button component={NavLink} to="/Inicio" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
+            <Button component={NavLink} to="/Inicio" color='third' sx={{ fontWeight: 800, fontSize: '1.4em'}}>
               Inicio
             </Button>
-            <Button component={NavLink} to="/Nosotros" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
+            <Button component={NavLink} to="/Nosotros" color='third' sx={{ fontWeight: 800, fontSize: '1.4em'}}>
               Nosotros
             </Button>
-            <Button component={NavLink} to="/NuestrosDepartamentos" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
+            <Button component={NavLink} to="/NuestrosDepartamentos" color='third' sx={{ fontWeight: 800, fontSize: '1.4em'}}>
               Nuestros Departamentos
             </Button>
-            <Button component={NavLink} to="/Ubicacion" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
+            <Button component={NavLink} to="/Ubicacion" color='third' sx={{ fontWeight: 800, fontSize: '1.4em'}}>
               Ubicacion
             </Button>
-            <Button component={NavLink} to="/Galeria" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
+            <Button component={NavLink} to="/Galeria" color='third' sx={{ fontWeight: 800, fontSize: '1.4em'}}>
               Galeria
             </Button>
-            <Button component={NavLink} to="/Contacto" color='third' sx={{ fontWeight: 800, fontSize: '22px'}}>
+            <Button component={NavLink} to="/Contacto" color='third' sx={{ fontWeight: 800, fontSize: '1.4em'}}>
               Contacto
             </Button>
           </Toolbar>

@@ -53,15 +53,15 @@ export const CardComponent = ({
         image={foto}
       />
       <CardContent sx={{textAlign: 'center', mt: 3}}>
-        <Typography gutterBottom variant="h5" component="div" color={'black'} fontSize={'27px'}>
+        <Typography gutterBottom variant="h5" component="div" color={'secondary.main'} fontSize={'27px'}>
           <b>{tituloCard}</b>
         </Typography>
-        <Typography variant="body2" color="black" fontSize={'20px'} >
+        <Typography variant="body2" color="secondary.main" fontSize={'20px'} >
           {descripcionCard}
         </Typography>
       </CardContent>
       <CardActions >
-        <Button size="small" onClick={handleOpen} >Leer mas</Button>
+        <Button size="small" onClick={handleOpen} color='secondary' variant='contained'>Leer mas</Button>
       </CardActions>
     </Card>
 
@@ -124,7 +124,7 @@ export const CardComponent = ({
                         <Divider color={textColor} />
                           <CardContent>
                               <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
-                                <b style={{ marginRight: '0.5em' }}>Ubicacion:</b> {ubicacion} <Link to="/Ubicacion">Ver</Link>
+                                <b style={{ marginRight: '0.5em' }}>Ubicacion:</b> {ubicacion} <Link to="/Ubicacion" >Ver</Link>
                               </Typography>
                               <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
                                 <b style={{ marginRight: '0.5em' }}>Camas:</b> {camas}
