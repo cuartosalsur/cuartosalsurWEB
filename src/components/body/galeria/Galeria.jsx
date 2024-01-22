@@ -1,4 +1,4 @@
-import { Typography, Grid, ImageList, ImageListItem } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 //Light Gallery
 import LightGallery from 'lightgallery/react';
 // import styles

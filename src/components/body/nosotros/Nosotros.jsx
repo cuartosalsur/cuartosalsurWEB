@@ -59,7 +59,6 @@ export const Nosotros = ({
       </Grid>
       <Grid
         container
-        justifyContent={'space-around'}
         alignItems={'center'}
         flexDirection={'row'}
         sx={{
@@ -70,34 +69,34 @@ export const Nosotros = ({
       <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
           <Wifi fontSize="large" color='primary' />
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '19px', md:'25px'}}}><b>Free Wifi</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>Free Wifi</b></Typography>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
           <Weekend fontSize="large" color='primary' />
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '19px', md:'25px'}}}><b>Fully</b></Typography>
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '19px', md:'25px'}}}><b>Furnished</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>Fully</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>Furnished</b></Typography>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
           <SupervisorAccount fontSize="large" color='primary' />
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '19px', md:'25px'}}}><b>Administration</b></Typography>
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '19px', md:'25px'}}}><b>Service</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>Administration</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize:{xs: '14px', sm: '19px', md:'25px'}}}><b>Service</b></Typography>
         </Box>
       </Grid>
       <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
       <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
           <LocalParking fontSize="large" color='primary' />
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>Free</b></Typography>
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>Parking</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>Free</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>Parking</b></Typography>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
           <CleaningServices fontSize="large" color='primary' />
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>Cleaning</b></Typography>
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>Service</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>Cleaning</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>Service</b></Typography>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
           <AirplanemodeActive fontSize="large" color='primary' />
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>Airport</b></Typography>
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '20px', md:'25px'}}}><b>30′</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>Airport</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>30′</b></Typography>
         </Box>
       </Grid>
       </Grid>

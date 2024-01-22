@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {Card, CardMedia, CardContent, Typography, Button, CardActions, Modal, Box, Grid, Divider} from '@mui/material';
+import LogoFragment from '../../../assets/img/logo-fragment.png';
 
 const style = {
     boxStyle:{
@@ -45,25 +46,30 @@ export const CardComponent = ({
 
   return (
     <>
-    <Card sx={{ maxWidth: 500, height: 390, boxShadow: '1px 3px 5px 2px', bgcolor: '#E6F5A2' }} className='cardBox'>
-      <CardMedia
-        component={cardComponent || 'img'}
-        alt="Dpto 13"
-        height="200"
-        image={foto}
-      />
-      <CardContent sx={{textAlign: 'center', mt: 3}}>
-        <Typography gutterBottom variant="h5" component="div" color={'secondary.main'} fontSize={'27px'}>
-          <b>{tituloCard}</b>
-        </Typography>
-        <Typography variant="body2" color="secondary.main" fontSize={'20px'} >
-          {descripcionCard}
-        </Typography>
-      </CardContent>
-      <CardActions >
-        <Button size="small" onClick={handleOpen} color='secondary' variant='contained'>Leer mas</Button>
-      </CardActions>
-    </Card>
+    <Box sx={{ position: 'relative' }} className='cardBox'>
+      <Card sx={{ maxWidth: 500, height: 390, boxShadow: '1px 3px 5px 2px', bgcolor: '#E6F5A2' }}>
+        <CardMedia
+          component={cardComponent || 'img'}
+          alt="Dpto 13"
+          height="200"
+          image={foto}
+        />
+        <CardContent sx={{textAlign: 'center', mt: 3}}>
+          <Typography gutterBottom variant="h5" component="div" color={'secondary.main'} fontSize={'27px'}>
+            <b>{tituloCard}</b>
+          </Typography>
+          <Typography variant="body2" color="secondary.main" fontSize={'20px'} >
+            {descripcionCard}
+          </Typography>
+        </CardContent>
+        <CardActions >
+          <Button size="small" onClick={handleOpen} color='secondary' variant='contained'>Leer mas</Button>
+        </CardActions>
+      </Card>
+      <Box sx={{ position: 'absolute', bottom: -45, right: {xs: -20,sm: -35,md:-40} }}>
+        <img src={LogoFragment} alt="Logo" className='logo-fragment' />
+      </Box>
+    </Box>
 
     <div>
       <Modal
@@ -78,7 +84,7 @@ export const CardComponent = ({
                 border: '1px solid #000', 
                 borderRadius: 2, 
                 bgcolor: bgColorModal, 
-                p: 2,  
+                p: {xs: 1, md:2},  
                 width: '100%',
                 height: '90vh',
                 overflow: 'hidden'
@@ -112,7 +118,7 @@ export const CardComponent = ({
                 </Grid>
 
                   <Grid item xs={12} md={5} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Box sx={{ bgcolor: '#4A5C49', borderRadius: 2, width: '100%', p: 3, maxHeight: '85vh', overflow: 'auto' }}>
+                    <Box sx={{ bgcolor: '#4A5C49', borderRadius: 2, width: '100%', p: {xs: 1, md:3}, height: '85vh', overflow: 'auto' }}>
                       <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
                         <Typography id="modal-modal-title" sx={{color: textColor, fontSize: {xs: 20, sm: 25, md: 30}}}>
                             {tituloCard}

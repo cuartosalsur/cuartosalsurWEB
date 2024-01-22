@@ -36,26 +36,15 @@
     height: 27em;
 }
 
-@media (max-width: 700px) {
-    .logo-img {
-        width: 7em;
-        height: 4em;
-        margin: 7px;
-    }
-    .logo-footer {
-        width: 19em;
-        height: 15em;
-    }
-    .logo-inicio{
-        width: 25em;
-        height: 18em;
-    }
-  }
-
 .cardBox:hover {   
     transition: .3s;
     transform: scalex(1.1) scaley(1.1);
     transform-origin: center;
+}
+
+.logo-fragment {
+    width: 10em;
+    height: 10em;
 }
 
 .img-full{
@@ -101,3 +90,23 @@ a:hover {
 .Light-Card {
     z-index: 10;
 }
+
+@media (max-width: 700px) {
+    .logo-img {
+        width: 7em;
+        height: 4em;
+        margin: 7px;
+    }
+    .logo-footer {
+        width: 19em;
+        height: 15em;
+    }
+    .logo-inicio{
+        width: 25em;
+        height: 18em;
+    }
+    .logo-fragment {
+        width: 8em;
+        height: 8em;
+    }
+  }
