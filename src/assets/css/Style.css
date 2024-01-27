@@ -32,8 +32,13 @@
 }
 
 .logo-inicio{
-    width: 35em;
-    height: 27em;
+    width: 80%;
+    height: 90%;
+}
+
+.logo-inicio-phone{
+    width: 90%;
+    height: 90%;
 }
 
 .cardBox:hover {   
@@ -91,7 +96,7 @@ a:hover {
     z-index: 10;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .logo-img {
         width: 7em;
         height: 4em;
@@ -108,5 +113,9 @@ a:hover {
     .logo-fragment {
         width: 8em;
         height: 8em;
+    }
+    .logo-inicio{
+        width: 120%;
+        height: 100%;
     }
   }

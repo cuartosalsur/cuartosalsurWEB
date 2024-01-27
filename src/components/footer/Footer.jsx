@@ -3,7 +3,7 @@ import { Grid, Box, Typography, Divider } from '@mui/material';
 import Foto from '../../assets/img/footer.png';
 import LogoBooking from '../../assets/img/booking-logo.png';
 import LogoAirbnb from '../../assets/img/airbnb-logo.jpg';
-import Logo from '../../assets/img/logo.png';
+import Logo from '../../assets/img/logo-amarillo.png';
 
 export const Footer = () => {
   return (
