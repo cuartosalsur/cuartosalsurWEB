@@ -1,4 +1,4 @@
-import { Typography, Grid, Box } from '@mui/material';
+import { Typography, Grid, Box, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Button } from '@mui/material';
 import {Wifi, Weekend, LocalParking, SupervisorAccount, AirplanemodeActive, CleaningServices} from '@mui/icons-material'; 
 
 export const Nosotros = ({
@@ -20,8 +20,8 @@ export const Nosotros = ({
         justifyContent={'center'}
         alignItems={'center'}
         sx={{
-          height: {xs: '100%', md: '90vh' },
-          padding: {xs: '15% 5%', lg: '7% 5%'},
+          height: '100%',
+          padding: {xs: '5%', sm: '3% 5%', md: '5%'},
           bgcolor: '#4A5C49'
         }}
       >
@@ -57,6 +57,7 @@ export const Nosotros = ({
           </Grid>
         </Grid>
       </Grid>
+
       <Grid
         container
         alignItems={'center'}
