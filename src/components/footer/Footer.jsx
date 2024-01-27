@@ -8,7 +8,7 @@ import Logo from '../../assets/img/logo-amarillo.png';
 export const Footer = () => {
   return (
     <>
-      <div sx={{ backgroundColor: '#FFF' }}>
+      <div sx={{ backgroundColor: '#000' }}>
         <Grid 
         container 
         sx={{ height: '90vh', position: 'relative'}}>
@@ -20,8 +20,9 @@ export const Footer = () => {
             sx={{
               position: 'absolute',
               top: '50%',
-              left: '50%',
+              left: {xs: '60%', sm:'50%'},
               transform: 'translate(-50%, -50%)',
+              overflow: 'hidden'
             }}
           >
             <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center'}}>
