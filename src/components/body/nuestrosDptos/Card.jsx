@@ -87,16 +87,16 @@ export const CardComponent = ({
                 p: {xs: 1, md:2},  
                 width: '100%',
                 height: '90vh',
-                overflow: 'hidden'
+                overflow: {xs: 'auto', md: 'hidden'}
                 }} >
                 <Grid 
                 container 
                 >
-                 <Grid item xs={12} md={7} sx={{ display: { xs: 'none', md: 'flex' }, flexDirection: 'column', alignItems: 'center'}}>
-                  <Box sx={{ width:  '85%', height: '70vh', alignItems: 'center' }}>
+                 <Grid item xs={12} md={7} sx={{ display: { xs: 'none', sm: 'flex' }, flexDirection: 'column', alignItems: 'center', maxHeight: '100%', overflow: {xs: 'hidden', md: 'none'}, marginBottom: {xs: 2, md: 0}}}>
+                  <Box sx={{ width:  '85%', height:{ xs: '60vh', md:'70vh'}, alignItems: 'center' }}>
                     {/* Imagen grande */}
                     {selectedImage && (
-                      <img alt="Selected" src={selectedImage} className="img-card" style={{ width:  '100%', height: '85%', maxHeight: '100%' }} />
+                      <img alt="Selected" src={selectedImage} style={{ width:  '100%', height: '85%', maxHeight: '100%' }} />
                     )}
 
                     {/* Miniaturas */}
@@ -109,7 +109,7 @@ export const CardComponent = ({
                             alt={item.title}
                             src={item.img}
                             className="img-card"
-                            style={{ width: '80px', height: '80px', cursor: 'pointer' }}
+                            style={{ width: '8em', height: '6em', cursor: 'pointer' }}
                             onClick={() => handleThumbnailClick(item.img)}
                           />
                         ))}
