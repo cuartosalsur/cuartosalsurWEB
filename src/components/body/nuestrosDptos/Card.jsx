@@ -93,10 +93,10 @@ export const CardComponent = ({
                 container 
                 >
                  <Grid item xs={12} md={7} sx={{ display: { xs: 'none', md: 'flex' }, flexDirection: 'column', alignItems: 'center'}}>
-                  <Box sx={{ width:  '75%', height: '70vh' }}>
+                  <Box sx={{ width:  '85%', height: '70vh', alignItems: 'center' }}>
                     {/* Imagen grande */}
                     {selectedImage && (
-                      <img alt="Selected" src={selectedImage} className="img-card" style={{ width:  '100%', height: '100%', maxHeight: '100%' }} />
+                      <img alt="Selected" src={selectedImage} className="img-card" style={{ width:  '100%', height: '85%', maxHeight: '100%' }} />
                     )}
 
                     {/* Miniaturas */}
