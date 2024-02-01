@@ -39,9 +39,14 @@ import Foto39 from '../img/España/foto9.jpg';
 import Foto40  from '../img/España/foto10.jpg';
 import Foto41  from '../img/España/foto11.jpg';
 import Foto42  from '../img/España/foto12.jpg';
+import Foto43  from '../img/entrada.jpg';
 
 
 export const itemDataGeneral = [
+  {
+    img: Foto43,
+    title: 'Departamento Amancay y Verbena',
+  },
   {
     img: Foto1,
     title: 'Departamento Amancay',

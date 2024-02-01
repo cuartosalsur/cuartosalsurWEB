@@ -1,5 +1,6 @@
-import { Typography, Grid, Box, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Button } from '@mui/material';
+import { Typography, Grid, Box, CardMedia } from '@mui/material';
 import {Wifi, Weekend, LocalParking, SupervisorAccount, AirplanemodeActive, CleaningServices} from '@mui/icons-material'; 
+import FotoNosotros from '../../../assets/img/nosotros.png';
 
 export const Nosotros = ({
   titulo = 'NOSOTROS',
@@ -29,9 +30,9 @@ export const Nosotros = ({
         container 
         justifyContent={'center'}
         alignItems={'center'}
-        spacing={10}
+        spacing={0}
         >
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={7}>
             <Typography
               sx={{
                 fontSize: {xs: '35px', lg: '60px'},
@@ -52,8 +53,14 @@ export const Nosotros = ({
               </Typography>
             </Grid>
                 
-            <Grid item xs={12} md={4} sx={{marginTop: {xs: '20px', sm: 0}, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-
+            <Grid item xs={12} md={5} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 3}}>
+            <CardMedia
+              component={'img'}
+              alt="Nosotros Foto"
+              height="100%"
+              weight= "100%"
+              image={FotoNosotros}
+            />
           </Grid>
         </Grid>
       </Grid>

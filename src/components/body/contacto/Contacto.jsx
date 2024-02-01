@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { Link as RouterLink } from 'react-router-dom';
 import { Grid, Typography, InputBase, Box, Snackbar, Alert, AlertTitle } from '@mui/material';
 import { alpha, styled } from '@mui/material/styles';
 import { Mail, LocalPhone, Instagram} from '@mui/icons-material';
@@ -157,9 +158,22 @@ export const Contacto = ({
             </Box>
             <Box sx={{display: 'flex', flexDirection: {xs: 'row'}, alignItems: 'center', gap: 2}}>
               <Instagram color='third'/>
-              <Typography variant="h6" color="third.main">
-                Instagram-name
-              </Typography>
+              <RouterLink
+                to="https://www.instagram.com/cuartosalsur_?igsh=dnBqNTM4dGd2aWF2" 
+              >
+                  <Typography
+                    variant="h6"
+                    color="third.main"
+                    sx={{
+                      color: '#fff',
+                      '&:hover': {
+                        color: '#E6F5A2',
+                      },
+                    }}
+                  >
+                  cuartosalsur_
+                </Typography>
+              </RouterLink>
             </Box>
           </Box>
         </Grid>
