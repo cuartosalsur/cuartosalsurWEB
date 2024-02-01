@@ -40,7 +40,8 @@ export const NuestrosDptos = ({
         sx={{
           height: {xs:'100%', md: '100vh'},
           padding: {xs: '15% 5%', lg: '7% 5%'},
-          bgcolor: '#FFF'
+          bgcolor: '#FFF',
+          marginBottom: {xs: 0, md: 2, lg: 4}
         }}
       >
         <Typography
