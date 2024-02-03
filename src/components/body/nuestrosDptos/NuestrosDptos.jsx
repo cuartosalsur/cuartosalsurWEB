@@ -10,26 +10,23 @@ import foto3 from '../../../assets/img/España/foto13.jpg';
 
 export const NuestrosDptos = ({
   titulo = 'NUESTROS DEPARTAMENTOS',
-  descripcionAmancay= `ideal para la familia. Vista al lago. Ubicado en el centro. El edificio cuenta con 
+  descripcionAmancay= `Ideal para la familia. Vista al lago. Ubicado cercano al centro. El edificio cuenta con 
   ascensor y escalera. Departamento dos ambientes en el primer piso. Cochera. Amueblado. Cuenta con radiadores 
   en todos los ambientes. Tres camas, un somier y dos camas de una plaza, equipadas con blanquearía. Cocina 
   equipada con electrodomésticos y vajilla. Baño equipado con toallas, productos de higiene personal y secador 
-  de pelo. Servicio de limpieza. Servicios de comunicación y entretenimiento que incluyen wifi, TV en todos los 
-  ambientes con acceso a plataformas de entretenimiento visual y libros y juegos de mesa. Servicio de atención 
-  personalizada (administrador). `,
-  descripcionVerbena=`ideal para la familia. Vista al lago. Ubicado en el centro. El edificio cuenta con ascensor 
+  de pelo. Servicio de limpieza opcional. Wifi y TV en todos los ambientes con acceso a plataformas de entretenimiento 
+  visual y libros y juegos de mesa. Servicio de atención personalizada (administrador). `,
+  descripcionVerbena=`Ideal para la familia. Vista al lago. Ubicado cercano al centro. El edificio cuenta con ascensor 
   y escalera. Departamento dos ambientes en el primer piso. Cochera. Amueblado. Cuenta con radiadores en todos 
-  los ambientes. Tres camas, un somier y dos camas de una plaza, equipadas con blanquearía Cocina equipada con 
+  los ambientes. Tres camas, un somier y dos camas de una plaza, equipadas con blanquearía. Cocina equipada con 
   electrodomésticos y vajilla. Baño equipado con toallas, productos de higiene personal y secador de pelo. 
-  Servicio de limpieza. Servicios de comunicación y entretenimiento que incluyen wifi, TV en todos los ambientes 
-  con acceso a plataformas de entretenimiento visual y libros y juegos de mesa. Servicio de atención 
-  personalizada (administrador). `,
-  descripcionLupines=` ideal para parejas. Ubicado en el centro. El edificio cuenta con ascensor y escalera. 
+  Servicio de limpieza opcional. Wifi y TV en todos los ambientes con acceso a plataformas de entretenimiento 
+  visual y libros y juegos de mesa. Servicio de atención personalizada (administrador). `,
+  descripcionLupines=`Ideal para parejas. Ubicado en el centro. El edificio cuenta con ascensor y escalera. 
   Departamento mono ambiente en el segundo piso. Amueblado. Cuenta con radiador en todos los ambientes. Una 
   cama, somier, equipada con blanquearía. Cocina equipada con electrodomésticos y vajilla. Baño equipado con 
-  toallas, productos de higiene personal y secador de pelo. Servicio de limpieza. Servicios de comunicación y 
-  entretenimiento que incluyen wifi y TV en todos los ambientes con acceso a plataformas de entretenimiento. 
-  Servicio de atención personalizada (administrador).`,
+  toallas, productos de higiene personal y secador de pelo. Servicio de limpieza opcional. Wifi y TV en todos 
+  los ambientes con acceso a plataformas de entretenimiento. Servicio de atención personalizada (administrador).`,
 }) => {
   return (
     <>

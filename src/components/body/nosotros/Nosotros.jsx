@@ -4,11 +4,11 @@ import FotoNosotros from '../../../assets/img/nosotros.png';
 
 export const Nosotros = ({
   titulo = 'NOSOTROS',
-  p = `Sabemos que viajar puede ser muy cansador, por es eso, desde que abrimos nuestras puertas hemos tenido 
+  p = `Sabemos que viajar puede ser muy cansador, por eso, desde que abrimos nuestras puertas hemos tenido 
   un sólo objetivo en mente: ofrecer a nuestros huéspedes una opción ideal para su alojamiento y hacer que su 
   visita sea especial. Cuartos al Sur, donde se unen el estilo, el confort y la hospitalidad, tiene todo lo que 
   necesitas: excelente ubicación con vista al lago, parking, departamentos amplios y completamente equipados, 
-  servicios de limpieza, servicios de comunicación y entretenimiento y servicio de atención personalizada. 
+  servicios de limpieza opcional, servicio de entretenimiento y servicio de atención personalizada. 
   Somos la combinación perfecta de confort y conveniencia que te garantiza la atención y la comodidad que te 
   mereces haciendo que tu experiencia con nosotros sea única e irrepetible. Navega por nuestro sitio web para 
   encontrar más información sobre nuestras habitaciones, servicios e instalaciones; contáctanos en caso de tener 
@@ -107,8 +107,8 @@ export const Nosotros = ({
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
           <CleaningServices fontSize="large" color='primary' />
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>Servicio de </b></Typography>
-          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>limpieza</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>Servicio opcional</b></Typography>
+          <Typography color="#4A5C49" sx={{fontSize: {xs: '14px', sm: '19px', md:'25px'}}}><b>de limpieza</b></Typography>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
           <AirplanemodeActive fontSize="large" color='primary' />
