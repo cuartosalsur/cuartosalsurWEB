@@ -1,6 +1,6 @@
 import { Grid, Box, Typography, Divider } from '@mui/material';
 //fotos
-import Foto from '../../assets/img/footer.png';
+import Foto from '../../assets/img/footer2.png';
 import LogoBooking from '../../assets/img/booking-logo.png';
 import LogoAirbnb from '../../assets/img/airbnb-logo.jpg';
 import Logo from '../../assets/img/logo-amarillo.png';
@@ -15,11 +15,11 @@ export const Footer = () => {
           <Grid
             container
             justifyContent={'center'}
-            alignItems={'center'}
+            alignItems={'end'}
             spacing={10}
             sx={{
               position: 'absolute',
-              top: '50%',
+              top: '55%',
               left: {xs: '60%', sm:'50%'},
               transform: 'translate(-50%, -50%)',
               overflow: 'hidden'
@@ -29,7 +29,7 @@ export const Footer = () => {
               <img src={Logo} alt="Logo" className='logo-footer'/>
             </Grid>
 
-            <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', gap: 5}}>
+            <Grid item xs={12} md={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'end', gap: 5}}>
               <img
                 src={LogoBooking}
                 alt="Booking Logo"

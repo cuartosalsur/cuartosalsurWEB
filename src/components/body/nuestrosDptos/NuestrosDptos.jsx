@@ -4,9 +4,9 @@ import { CardComponent } from './Card';
 import { itemData } from '../../../assets/Data/Data';
 import { itemData15 } from '../../../assets/Data/Data15';
 import { itemDataEspaña } from '../../../assets/Data/DataEspaña';
-import foto1 from '../../../assets/img/dpto13/img1.jpg';
+import foto1 from '../../../assets/img/dpto13/img6.jpg';
 import foto2 from '../../../assets/img/dpto15/fotoo6.jpg';
-import foto3 from '../../../assets/img/España/foto2.jpg';
+import foto3 from '../../../assets/img/España/foto13.jpg';
 
 export const NuestrosDptos = ({
   titulo = 'NUESTROS DEPARTAMENTOS',

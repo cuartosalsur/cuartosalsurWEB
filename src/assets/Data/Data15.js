@@ -16,16 +16,24 @@ import Foto14 from '../img/dpto15/fotoo14.jpg';
 
 export const itemData15 = [
   {
+    img: Foto7,
+    title: 'Departamento Verbena',
+  },
+  {
+    img: Foto3,
+    title: 'Departamento Verbena',
+  },
+  {
+    img: Foto10,
+    title: 'Departamento Verbena',
+  },
+  {
     img: Foto1,
     title: 'Departamento Verbena',
   },
   {
     img: Foto2,
     title: 'Departamento Verbena',
-  },
-  {
-      img: Foto3,
-      title: 'Departamento Verbena',
   },
   {
     img: Foto4,
@@ -40,19 +48,11 @@ export const itemData15 = [
     title: 'Departamento Verbena',
   },
   {
-    img: Foto7,
-    title: 'Departamento Verbena',
-  },
-  {
     img: Foto8,
     title: 'Departamento Verbena',
   },
   {
     img: Foto9,
-    title: 'Departamento Verbena',
-  },
-  {
-    img: Foto10,
     title: 'Departamento Verbena',
   },
   {

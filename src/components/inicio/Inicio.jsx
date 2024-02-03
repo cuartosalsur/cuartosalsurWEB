@@ -1,6 +1,6 @@
 import {Grid, Typography} from '@mui/material';
 //foto
-import Fondo from '../../assets/img/fondoInicio.png';
+import Fondo from '../../assets/img/fondoInicio3.png';
 import Logo from '../../assets/img/inicio-logo-amarillo.png';
 import LogoPhone from '../../assets/img/inicio-phone-amarillo.png';
 
@@ -19,7 +19,7 @@ export const Inicio = () => {
           sx={{
             display: { xs: 'none', sm: 'flex' },
             position: 'absolute',
-            top: '50%',
+            top: '55%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
         }}>

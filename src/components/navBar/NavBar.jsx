@@ -16,7 +16,9 @@ export const NavBar = () => {
           <Toolbar
             sx={{
               margin: '0 5%',
-              gap: '3%'
+              gap: '3%',
+              display: 'flex',
+              justifyContent: 'center'
             }}
           >
             <Button component={NavLink} to="/Inicio" color='third' sx={{ fontWeight: 800, fontSize: { md: '1em', lg:'1.2em'}}}>

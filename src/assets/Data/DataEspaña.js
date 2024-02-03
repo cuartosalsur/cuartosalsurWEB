@@ -14,18 +14,6 @@ import Foto12 from '../img/España/foto12.jpg';
 
 export const itemDataEspaña = [
     {
-        img: Foto1,
-        title: 'Departamento Lupines',
-    },
-    {
-        img: Foto4,
-        title: 'Departamento Lupines',
-    },
-    {
-        img: Foto7,
-        title: 'Departamento Lupines',
-    },
-    {
         img: Foto3,
         title: 'Departamento Lupines',
     },
@@ -34,11 +22,27 @@ export const itemDataEspaña = [
         title: 'Departamento Lupines',
     },
     {
-        img: Foto5,
+        img: Foto10,
         title: 'Departamento Lupines',
     },
     {
         img: Foto6,
+        title: 'Departamento Lupines',
+    },
+    {
+        img: Foto4,
+        title: 'Departamento Lupines',
+    },
+    {
+        img: Foto1,
+        title: 'Departamento Lupines',
+    },
+    {
+        img: Foto7,
+        title: 'Departamento Lupines',
+    },
+    {
+        img: Foto5,
         title: 'Departamento Lupines',
     },
     {
@@ -47,10 +51,6 @@ export const itemDataEspaña = [
     },
     {
         img: Foto9,
-        title: 'Departamento Lupines',
-    },
-    {
-        img: Foto10,
         title: 'Departamento Lupines',
     },
     {

@@ -147,7 +147,7 @@ export const CardComponent = ({
                               <Typography id="modal-modal-description" sx={{color: textColor, mt: 1, fontSize: {xs: 13, sm: 15}}}>
                                 <b style={{ marginRight: '0.5em' }}>Vista al lago:</b> {vistaLago}
                               </Typography>
-                              <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 13, sm: 15}}}>
+                              <Typography id="modal-modal-description" sx={{color: textColor, mt: 2, fontSize: {xs: 13, sm: 15}, textAlign: 'justify'}}>
                                 <b style={{ marginRight: '0.5em' }}>Descripción: </b> {descripcionModal}
                               </Typography>
                           </CardContent>
