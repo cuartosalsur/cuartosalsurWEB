@@ -22,6 +22,10 @@ export const itemDataEspaña = [
         title: 'Departamento Lupines',
     },
     {
+        img: Foto4,
+        title: 'Departamento Lupines',
+    },
+    {
         img: Foto10,
         title: 'Departamento Lupines',
     },
@@ -30,7 +34,11 @@ export const itemDataEspaña = [
         title: 'Departamento Lupines',
     },
     {
-        img: Foto4,
+        img: Foto9,
+        title: 'Departamento Lupines',
+    },
+    {
+        img: Foto5,
         title: 'Departamento Lupines',
     },
     {
@@ -42,15 +50,7 @@ export const itemDataEspaña = [
         title: 'Departamento Lupines',
     },
     {
-        img: Foto5,
-        title: 'Departamento Lupines',
-    },
-    {
         img: Foto8,
-        title: 'Departamento Lupines',
-    },
-    {
-        img: Foto9,
         title: 'Departamento Lupines',
     },
     {

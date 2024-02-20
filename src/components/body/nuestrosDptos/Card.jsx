@@ -103,7 +103,7 @@ export const CardComponent = ({
                     <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, marginTop: 2, width: '100%' }}>
                       {fotosLista &&
                         fotosLista.length > 0 &&
-                        fotosLista.slice(0, 3).map((item) => (
+                        fotosLista.slice(0, 4).map((item) => (
                           <img
                             key={item.img}
                             alt={item.title}

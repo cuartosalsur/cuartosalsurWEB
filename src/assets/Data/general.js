@@ -24,7 +24,8 @@ import Foto38 from '../img/España/foto8.jpg';
 import Foto39 from '../img/España/foto9.jpg';
 import Foto42  from '../img/España/foto12.jpg';
 import Foto43  from '../img/dpto15/fotoo15.jpg';
-
+import Foto44 from '../img/vista1.jpg';
+import Foto45 from '../img/vista2.jpg';
 
 export const itemDataGeneral = [
   {
@@ -68,6 +69,10 @@ export const itemDataGeneral = [
     title: 'Departamento Amancay',
   },
   {
+    img: Foto44,
+    title: 'Departamento Amancay',
+  },
+  {
     img: Foto23,
     title: 'Departamento Verbena',
   },
@@ -102,6 +107,10 @@ export const itemDataGeneral = [
   {
     img: Foto29,
     title: 'Departamento Verbena',
+  },
+  {
+    img: Foto45,
+    title: 'Departamento Amancay',
   },
   {
     img: Foto42,

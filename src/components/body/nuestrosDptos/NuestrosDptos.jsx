@@ -69,7 +69,7 @@ export const NuestrosDptos = ({
           cochera= 'Si.'
           vistaLago= 'Si.'
           descripcionModal= {descripcionAmancay}
-          ubicacion= '20 de Junio 781, San Carlos de Bariloche, Río Negro. - '
+          ubicacion= 'Barrio Belgrano, San Carlos de Bariloche, Río Negro. - '
           />
         </Grid>
 
@@ -87,7 +87,7 @@ export const NuestrosDptos = ({
           cochera= 'Si.'
           vistaLago= 'Si.'
           descripcionModal= {descripcionVerbena}
-          ubicacion= '20 de Junio 781, San Carlos de Bariloche, Río Negro. - '
+          ubicacion= 'Barrio Belgrano, San Carlos de Bariloche, Río Negro. - '
           />
         </Grid>
 
@@ -99,13 +99,13 @@ export const NuestrosDptos = ({
           tituloCard = 'Lupines'
           descripcionCard='Ideal para parejas.'
           textColor='#fff'
-          baños= 'Numero Baños'
+          baños= '1'
           camas= '1'
           ocupacion= 'Hasta 2 personas.'
           cochera= 'No.'
           vistaLago= 'No.'
           descripcionModal= {descripcionLupines}
-          ubicacion= 'España 334, San Carlos de Bariloche, Río Negro. - '
+          ubicacion= 'Zona Centrica, San Carlos de Bariloche, Río Negro. - '
           />
         </Grid>
       </Grid>
