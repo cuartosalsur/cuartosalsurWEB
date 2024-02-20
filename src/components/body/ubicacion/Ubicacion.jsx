@@ -4,7 +4,7 @@ import { Typography, Grid, Box, Button, ButtonGroup } from '@mui/material';
 const Mapas = {
   one: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12019.848691273733!2d-71.3332034440029!3d-41.13535173021739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b0f807a0e05%3A0xec42339f2b7c0fb7!2sBelgrano%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1708470630375!5m2!1ses!2sar",
   two: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12019.848691273733!2d-71.3332034440029!3d-41.13535173021739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b0f807a0e05%3A0xec42339f2b7c0fb7!2sBelgrano%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1708470630375!5m2!1ses!2sar",
-  three: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.5200500186077!2d-71.31368457243431!3d-41.13365056793389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b0d1da1c68b%3A0xf1022a2c71003777!2sEspa%C3%B1a%20%26%20French%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1708471075012!5m2!1ses!2sar",
+  three: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.0473696826316!2d-71.31482572220438!3d-41.133491867590116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b72dbb708e1%3A0xd91b7e92f820aa94!2sCentro%20C%C3%ADvico%20Bariloche!5e0!3m2!1ses!2sar!4v1708473401371!5m2!1ses!2sar",
 };
 
 export const Ubicacion = ({
